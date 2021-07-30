@@ -36,15 +36,29 @@ ul li a{
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-main{
+/* main{
     background-color: #FFD523;
     display: flex;
     justify-content: space-around;
     width: 100%;
     margin: 10px 0; 
-}
+} */
 main .code-editor {
     float: right;
     width: 50%;
     margin-left: 100px;
+}
+.container {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.container .course-image{
+    width: 50%;
+}
+.container .course-discription{
+    width: 50%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }

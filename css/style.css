@@ -1,17 +1,10 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Mono:wght@200&display=swap');html {
     padding: 0%;
     margin: 0%;
 }
 
-
-/* body {
-    padding: 15px 30px; */
-
-
-/* background-color: #;
-} */
-
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #595260;
@@ -80,68 +73,85 @@ main .code-editor {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.wlc {
-    width: 99%;
-    height: 100%;
-}
-
-.wlc .text p {
-    font-size: 40px;
-    padding-top: 70px;
-    text-align: justify;
-    float: left;
-    width: 50%;
-}
-
-.wlc.photo {
-    height: 200px;
-    float: right;
-}
-
-.wlc .photo img {
-    float: right;
-    height: 800px;
-    width: 800px;
-}
-
-.video div {
-    /* position: relative; */
-    margin-left: 50px;
-}
-
-.video #demi {
+.welcome {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: 100%;
+    padding: 10px;
 }
 
-.courses div {
+.welcome .text {
+    font-size: 20px;
+    width: 50%;
+    line-height: 40px;
+    font-family: Roboto Mono;
+    font-weight: 600;
+    padding-left: 100px;
+    animation: fadeIn 3s;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+       opacity: 3;
+    }
+  }
+  
+.welcome .photo {
+    width: 50%;
+    align-self: center;
+}
+.photo img {
+    width: 70%;
+}
+.video {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #FFD523;
+}
+.video #demo {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.courses {
+    background-color: #595260;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses .course {
     display: inline-block;
     color: black;
     background-color: white;
+    border: 0.5px solid black;
+    padding: 25px;
 }
 
-.courses div img {
-    height: 200px;
-    width: 285px;
-    text-align: center;
+.course img {
+    width: 100%;
 }
 
-
-
-.courses div #a{
-  
-    padding-top: 30px;
+.course .purchase {
+    display: flex;
+    justify-content: space-around;
 }
-
-
-
-
-
-
-
-.courses div h4 {
-    padding-right: 30px;
-    padding-bottom: 10px;
-    text-decoration: line-through;
-    float: right;
+.purchase .add-to-cart {
+    width: 40%;
+    background-color: #FFD523;
+    border: 00.5px solid #50CB93;
+    border-radius: 5px;
+    color: #595260;
+    font-family: Roboto Mono;
+    font-size: 15px;
+    font-weight: bold;
+}
+.add-to-cart:hover {
+    background-color: #595260;
+    color: #FFD523;
 }

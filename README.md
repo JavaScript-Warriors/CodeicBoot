@@ -1,5 +1,5 @@
 # CodeicBoot
-Final project of Code201.
+An online codeing & programing courses website.
 
 ## Team members:
 * Amer Alqnahrah.

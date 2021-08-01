@@ -62,3 +62,36 @@ main .code-editor {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
+footer{
+    background-color: rgb(94, 97, 93);
+  
+  margin: 2% 10% 2% 10% ;
+}
+.about{
+    /* background-color: rgb(25, 155, 46); */
+    width: 20%;
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+h2{
+    padding-left:7%;
+    
+}
+.about ul li a {
+    font-size: 100%;
+    
+}
+.about p{
+    font-size: 79%;
+    background-color: darkblue;
+}
+.about1 {
+    
+    /* background-color: brown; */
+    width: 20%;
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 3%;
+}

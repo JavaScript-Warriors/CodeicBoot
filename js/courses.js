@@ -1,0 +1,35 @@
+"use strict";
+console.log(Course.allCourses);
+
+let coursesRaw = document.getElementById("courses-col");
+
+for (let i = 0; i < Course.allCourses.length; i++) {
+  let div1 = document.createElement("div");
+  let div2 = document.createElement("div");
+  let img = document.createElement("img");
+  let h5 = document.createElement("h5");
+  let p = document.createElement("p");
+  let hr = document.createElement("hr");
+  let a = document.createElement("a");
+  let h4 = document.createElement("h4");
+
+  div1.setAttribute("class", `mix ${Course.allCourses[i].cateogry}`);
+  div1.setAttribute("style", "border-style: solid");
+  div2.setAttribute("style", "width: 18rem");
+  a.setAttribute("href", "cart.html");
+
+  coursesRaw.appendChild(div1);
+  div1.appendChild(div2);
+  div2.appendChild(img);
+  div2.appendChild(h5);
+  div2.appendChild(p);
+  div2.appendChild(hr);
+  div2.appendChild(a);
+  div2.appendChild(h4);
+
+  img.src = Course.allCourses[i].src;
+  h5.textContent = Course.allCourses[i].name;
+  p.textContent = Course.allCourses[i].description;
+  a.textContent = "Add to Cart";
+  h4.textContent = Course.allCourses[i].price;
+}

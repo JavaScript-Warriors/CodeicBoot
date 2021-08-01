@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 html {
     padding: 0%;
     margin: 0%;
@@ -136,11 +133,22 @@ main .code-editor {
     padding-top: 30px;
 }
 
+.courses div h4 {
+    padding-right: 30px;
+    padding-bottom: 10px;
+    text-decoration: line-through;
+    float: right;
+}
 
 
 
 
 
+
+.courses div #a{
+  
+    padding-top: 30px;
+}
 
 .courses div h4 {
     padding-right: 30px;
@@ -148,6 +156,3 @@ main .code-editor {
     text-decoration: line-through;
     float: right;
 }
->>>>>>> 2a255225656b060347afcc2e453c39c0ae3916f4
-=======
->>>>>>> eb0b3ef4f1698e8d31a7c8b05758c77a0479a61b

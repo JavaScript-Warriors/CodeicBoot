@@ -1,5 +1,8 @@
 
 
+'use strict';
+
+
 // let array = {
 
 //     firstName: 'Qutadah',
@@ -7,15 +10,30 @@
 //     age: 25,
 // };
 
+// console.log(array);
 
 
+// const array=[];
+// let data = localStorage.getItem('cart');
 
 
-
-//
 let sum=0;
-const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-console.log(cartItems);
+
+function x() {
+    let item = [],
+        keys = Object.keys(localStorage),
+        i = keys.length;
+    while (i--) {
+        item.push(JSON.parse(localStorage.getItem(keys[i])))
+    }
+    console.log(item);
+    return item; 
+}
+
+
+let cartItem=x();
+
+console.log(cartItem[0].name);
 let table = document.getElementById('table');
 let trElemant = document.createElement('tr');
 
@@ -48,29 +66,29 @@ function footerForTable() {
     let thElemantForFooter1 = document.createElement('th');
     trElemantForFooter.appendChild(thElemantForFooter1);
     thElemantForFooter1.textContent ='Total Price' ;
-    
+
     let thElemantForFooter2 = document.createElement('th');
     trElemantForFooter.appendChild(thElemantForFooter2);
     thElemantForFooter2.textContent = `${sum} $`;
 
 
 }
-console.log(cartItems.firstName);
+// console.log(cartItems.firstName);
 function bodyForTable(){
     for (let i = 0; i < 3; i++) {
         let trElemantForBody=document.createElement('tr');
         table.appendChild(trElemantForBody);
         let thElemantForBody=document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody);
-        thElemantForBody.textContent=cartItems.firstName;
+        thElemantForBody.textContent=cartItem[i].name;
         let thElemantForBody1=document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody1);
-        thElemantForBody1.textContent=cartItems.lastName;
+        thElemantForBody1.textContent=cartItem[i].description;
         let thElemantForBody2=document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody2);
-        thElemantForBody2.textContent=cartItems.age;
-        sum+=cartItems.age ;
-        
+        thElemantForBody2.textContent=cartItem[i].price;
+        sum+=cartItem[i].price ;
+
     }
 }
 

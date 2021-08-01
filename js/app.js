@@ -36,29 +36,29 @@ generateCourses();
 
 console.log(Course.allCourses);
 
-// let sale1 = document.getElementById('c-sale-1');
-// let img = document.createElement('img');
-// let h5 = document.createElement('h5');
-// let p = document.createElement('p');
-// let hr = document.createElement('hr');
-// let a = document.createElement('a');
-// let h4 = document.createElement('h4');
+let sale1 = document.getElementById('c-sale-1');
+let img = document.createElement('img');
+let h5 = document.createElement('h5');
+let p = document.createElement('p');
+let hr = document.createElement('hr');
+let a = document.createElement('a');
+let h4 = document.createElement('h4');
 
-// img.setAttribute('src', Course.allCourses[0].src);
-// a.setAttribute('href','cart.html');
-// p.setAttribute('style','height:92px; overflow: hidden; text-overflow: ellipsis;');
+img.setAttribute('src', Course.allCourses[0].src);
+a.setAttribute('href','cart.html');
+p.setAttribute('style','height:92px; overflow: hidden; text-overflow: ellipsis;');
 
-// sale1.appendChild(img);
-// sale1.appendChild(h5);
-// sale1.appendChild(p);
-// sale1.appendChild(hr);
-// sale1.appendChild(a);
-// sale1.appendChild(h4);
+sale1.appendChild(img);
+sale1.appendChild(h5);
+sale1.appendChild(p);
+sale1.appendChild(hr);
+sale1.appendChild(a);
+sale1.appendChild(h4);
 
-// h5.textContent = Course.allCourses[0].name;
-// p.textContent = Course.allCourses[0].description;
-// h4.textContent = Course.allCourses[0].price;
-// a.textContent = 'Add to cart';
+h5.textContent = Course.allCourses[0].name;
+p.textContent = Course.allCourses[0].description;
+h4.textContent = Course.allCourses[0].price;
+a.textContent = 'Add to cart';
 
-// let courseStor =JSON.stringify(Course.allCourses[0]) ;
-// localStorage.setItem(Course.allCourses[0].key, courseStor);
+let courseStor =JSON.stringify(Course.allCourses[0]) ;
+localStorage.setItem(Course.allCourses[0].key, courseStor);

@@ -3,16 +3,25 @@
 'use strict';
 
 let sum = 0;
+
+let discount =JSON.parse(localStorage.getItem('discount'))
+
 function x() {
     let item = [],
         keys = Object.keys(localStorage),
         i = keys.length;
+
     while (i--) {
-        item.push(JSON.parse(localStorage.getItem(keys[i])))
+        if (keys[i] != 'discount') {
+            item.push(JSON.parse(localStorage.getItem(keys[i]))) 
+        }
+        
     }
     console.log(item);
     return item;
 }
+
+
 
 let cartItem = x();
 
@@ -51,16 +60,64 @@ function footerForTable() {
     let thElemantForFooter1 = document.createElement('th');
     trElemantForFooter.appendChild(thElemantForFooter1);
     thElemantForFooter1.textContent = 'Total Price';
+
+
+let discountfooter =document.createElement('tr');
+table.appendChild(discountfooter);
+
+discountfooter.textContent="Discount";
+
+
+
+let discountfooter1=document.createElement('th');
+
+discountfooter.appendChild(discountfooter1);
+
+
+discountfooter1.textContent=`${discount*100} %`;
+
+
+
+
+let discountValeu = sum - (discount * sum);
+
+
+
+let discountfooter12 =document.createElement('tr');
+table.appendChild(discountfooter12);
+
+discountfooter12.textContent="Total After Discount";
+
+
+
+let discountfooter123=document.createElement('th');
+
+discountfooter12.appendChild(discountfooter123);
+
+
+discountfooter123.textContent=`${discountValeu} $`;
+
+
+
+
+
+
+
+
     let thElemantForFooter2 = document.createElement('th');
     trElemantForFooter.appendChild(thElemantForFooter2);
     let trElemant=document.createElement('th');
     trElemantForFooter.appendChild(trElemant);
    
 
-    let thElemantForFooter3 = document.createElement('th');
-    trElemantForFooter.appendChild(thElemantForFooter3);
+    
 
-    thElemantForFooter3.textContent = `${sum} $`;
+    thElemantForFooter2.textContent = `${sum} $`;
+
+
+
+ 
+    
 
 
 }
@@ -77,6 +134,12 @@ function clearCart() {
 
 // console.log(cartItems.firstName);
 function bodyForTable() {
+
+    
+        
+    
+
+
 
     for (let i = 0; i < cartItem.length; i++) {
         let trElemantForBody = document.createElement('tr');
@@ -110,6 +173,11 @@ function bodyForTable() {
       
     }
 
+
+
+
+
+
 }
 
 function removeItemFromCart() {
@@ -122,3 +190,11 @@ function removeItemFromCart() {
 }
 
 
+function myFunction() {
+    let x = document.getElementById('a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}

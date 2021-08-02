@@ -19,6 +19,7 @@
 
 let sum = 0;
 
+
 function x() {
     let item = [],
         keys = Object.keys(localStorage),
@@ -34,13 +35,14 @@ function x() {
 let cartItem = x();
 
 console.log(cartItem[0].name);
-let table = document.getElementById('table');
-let trElemant = document.createElement('tr');
 
-table.appendChild(trElemant);
-console.log(table);
+let table = document.getElementById('table');
+
+
 function hedarForTable() {
 
+    let trElemant = document.createElement('tr');
+    table.appendChild(trElemant);
     let thElemant1 = document.createElement('th');
     trElemant.appendChild(thElemant1);
     thElemant1.textContent = 'Name';
@@ -56,15 +58,15 @@ function hedarForTable() {
 }
 
 
-function render(){
 
 
-    
+
+
 hedarForTable();
 bodyForTable();
 footerForTable();
-}
-// clearCart()
+
+
 
 
 
@@ -75,11 +77,11 @@ function footerForTable() {
     let thElemantForFooter1 = document.createElement('th');
     trElemantForFooter.appendChild(thElemantForFooter1);
     thElemantForFooter1.textContent = 'Total Price';
-
     let thElemantForFooter2 = document.createElement('th');
     trElemantForFooter.appendChild(thElemantForFooter2);
-
-
+    // let thElemandtForFooter2 = document.getElementById('ClickToPay');
+    // trElemantForFooter.appendChild(thElemandtForFooter2);
+    
     let thElemantForFooter3 = document.createElement('th');
     trElemantForFooter.appendChild(thElemantForFooter3);
 
@@ -88,14 +90,20 @@ function footerForTable() {
 
 }
 
+function pay(ev) {
+    let buttonPay = document.createElement('a');
+
+    buttonPay.setAttribute('href', 'form.html');
+    buttonPay.textContent = 'hello';
+
+}
+console.log(pay);
 function clearCart() {
-    sum=0;
-    // let trelement=document.createElement('tr');
-    // table.appendChild(trelement);
-    // trelement.textContent="";
-  let  tbodyelement =document.createElement('tbody');
-table.appendChild(tbodyelement);
-tbodyelement.removeAttribute(0);
+    sum = 0;
+    while (table.rows.length > 0) {
+        table.deleteRow(0);
+    }
+
 }
 
 // console.log(cartItems.firstName);
@@ -132,39 +140,35 @@ function bodyForTable() {
 
     }
 
-    }
+}
 
-    function removeItemFromCart(event) {
+function removeItemFromCart(event) {
 
-        let data = localStorage.getItem('cartItem');
-        let Arrayprs = JSON.parse(data);
-        if (event.target.id !== null) {
-            //   console.log(event.target.id);
-            // let data = localStorage.getItem('cart');
-            // let Arrayprs = JSON.parse(data);
-            console.log('before', cartItem.length)
-            console.log('before', cartItem)
-            // console.log(cart.items[event.target.id]);
-            cartItem.splice(event.target.id, 1);
+    let data = localStorage.getItem('cartItem');
+    let Arrayprs = JSON.parse(data);
+    if (event.target.id !== null) {
+        //   console.log(event.target.id);
+        // let data = localStorage.getItem('cart');
+        // let Arrayprs = JSON.parse(data);
+        // console.log('before', cartItem.length)
+        // console.log('before', cartItem)
+        // console.log(cart.items[event.target.id]);
+        cartItem.splice(event.target.id, 1);
 
-            console.log('after', cartItem.length);
-            console.log('after', cartItem);
-            
-            clearCart();
-            
-        //   tbody.remove();
+        // console.log('after', cartItem.length);
+        // console.log('after', cartItem);
+
+        clearCart();
+
+
         hedarForTable();
-            bodyForTable();
-            footerForTable();
-
-            // console.log(Arrayprs.length);
-            // localStorage.clear();
-            // let araystrings = JSON.stringify(cartItem);
-            // localStorage.setItem('cartItem', araystrings);
+        bodyForTable();
+        footerForTable();
 
 
-            
-        }
+
+
+
     }
-    render();
-   
+}
+

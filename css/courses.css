@@ -1,0 +1,47 @@
+
+
+.course-page{
+    padding: 25% ;
+    padding-top: 8%;
+}
+
+
+
+
+
+.courses2 div {
+    display: list-item;
+    color: black;
+    background-color: white;
+    list-style: none;
+    width: 100%;
+    height: auto;
+  
+}
+
+
+
+
+.courses2 div img {
+    height: 400px;
+    width: 940px;
+    text-align: center;
+}
+
+
+.courses2 div h5{
+
+font-size: 20px;
+margin-left: 40px;
+
+}
+ 
+
+.courses2 div p{
+
+    font-size: 30px;
+    width: 700px;
+}
+
+
+

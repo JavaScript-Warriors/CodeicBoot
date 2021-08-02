@@ -2,24 +2,7 @@
 
 'use strict';
 
-
-// let array = {
-
-//     firstName: 'Qutadah',
-//     lastName: 'Almomani',
-//     age: 25,
-// };
-
-// console.log(array);
-
-
-// const array=[];
-// let data = localStorage.getItem('cart');
-
-
 let sum = 0;
-
-
 function x() {
     let item = [],
         keys = Object.keys(localStorage),
@@ -31,13 +14,11 @@ function x() {
     return item;
 }
 
-
 let cartItem = x();
 
 console.log(cartItem[0].name);
 
 let table = document.getElementById('table');
-
 
 function hedarForTable() {
 
@@ -57,17 +38,9 @@ function hedarForTable() {
     thElemant4.textContent = 'Remove Icon';
 }
 
-
-
-
-
-
 hedarForTable();
 bodyForTable();
 footerForTable();
-
-
-
 
 
 function footerForTable() {
@@ -81,7 +54,7 @@ function footerForTable() {
     trElemantForFooter.appendChild(thElemantForFooter2);
     // let thElemandtForFooter2 = document.getElementById('ClickToPay');
     // trElemantForFooter.appendChild(thElemandtForFooter2);
-    
+
     let thElemantForFooter3 = document.createElement('th');
     trElemantForFooter.appendChild(thElemantForFooter3);
 
@@ -117,58 +90,32 @@ function bodyForTable() {
         let thElemantForBody = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody);
         thElemantForBody.textContent = cartItem[i].name;
+
         let thElemantForBody1 = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody1);
         thElemantForBody1.textContent = cartItem[i].description;
+
         let thElemantForBody2 = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody2);
         thElemantForBody2.textContent = cartItem[i].price;
         sum += cartItem[i].price;
 
 
-
         let btndele = document.createElement('button');
         trElemantForBody.appendChild(btndele);
+        btndele.setAttribute('value', cartItem[i].key);
         btndele.textContent = 'X';
-
-
-
-
-
         btndele.addEventListener('click', removeItemFromCart);
-
-
     }
 
 }
 
-function removeItemFromCart(event) {
-
-    let data = localStorage.getItem('cartItem');
-    let Arrayprs = JSON.parse(data);
-    if (event.target.id !== null) {
-        //   console.log(event.target.id);
-        // let data = localStorage.getItem('cart');
-        // let Arrayprs = JSON.parse(data);
-        // console.log('before', cartItem.length)
-        // console.log('before', cartItem)
-        // console.log(cart.items[event.target.id]);
-        cartItem.splice(event.target.id, 1);
-
-        // console.log('after', cartItem.length);
-        // console.log('after', cartItem);
-
-        clearCart();
-
-
-        hedarForTable();
-        bodyForTable();
-        footerForTable();
-
-
-
-
-
-    }
+function removeItemFromCart() {
+    localStorage.removeItem(this.value)
+    cartItem = x();
+    clearCart();
+    hedarForTable();
+    bodyForTable();
+    footerForTable();
 }
 

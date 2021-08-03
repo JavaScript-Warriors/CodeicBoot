@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 html {
     padding: 0%;
     margin: 0%;
@@ -17,7 +15,7 @@ html {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #595260;
+    background-color: white;
 }
 
 .logo {
@@ -26,7 +24,7 @@ header {
 
 .logo a,
 .logo h1 {
-    color: #FFD523;
+    color: #1978d1;
     text-decoration: none;
     font-size: 35px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

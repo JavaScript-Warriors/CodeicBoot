@@ -1,158 +1,217 @@
-html {
-    padding: 0%;
-    margin: 0%;
+body {
+   background-color: #f8f8fa;
+   width: 100%;
+   font-family: Arial, Helvetica, sans-serif;
+
 }
 
-
-/* body {
-    padding: 15px 30px; */
-
-
-/* background-color: #;
-} */
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #595260;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 8em;
+    box-sizing: border-box;
+    box-shadow: 0 5px 0 rgba(203, 54, 54, 0.1)
+    left: 0px;
+    right: 0px;
+    z-index: 2;
 }
 
 .logo {
-    padding: 0 50px;
+    padding: 0 100px;
+  }
+.logo-img{
+    height: 70%;
+    padding-top: 6%;
 }
 
-.logo a,
+/* .logo a,
 .logo h1 {
-    color: #FFD523;
-    text-decoration: none;
-    font-size: 35px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+  color: #1978d1;
+  text-decoration: none;
+  font-size: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+} */
 
 nav {
-    align-self: center;
-    padding: 0 50px;
+  align-self: center;
+  padding: 0 10em;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
 ul li a {
-    margin: 10px;
-    color: #FFD523;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 10px;
+  color: #AAAAAA;
+  text-decoration: none;
+  font-size: 1.4em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-
-/* main{
-    background-color: #FFD523;
+main{
+    
+    background-color: #f8f8fa
     display: flex;
     justify-content: space-around;
+    margin: 10em 0; 
+}
+.intro, .intro2{
     width: 100%;
-    margin: 10px 0; 
-} */
+    height: 70em;
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    padding: 16em 9% 0;
+    }
+    .intro h1 {
+        font-family: 'Ubuntu', sans-serif;
+    font-size: 5em;
+    width: 10em;
+    }
+    .intro h2 {
+        color: rgb(19, 133, 197);
+        text-align: left;   
+    }
+    .intro p, .intro2 p {
+        font-size: 1.7em;
+        padding-top: 0;
+        
+        width: 45%;
+        display: block;
+    }
+.intro-img1{
+    position: absolute;
+    width: 90em;
+    left: 50em;
+    right: 0px;
+    height: 45em;
+    top: 14em;
+    z-index: -1;
+      }
+
+
+.intro2{
+width: 100%;
+
+float: left;
+background-color: #FFD523;
+height: 35em;
+padding-top: 7em;
+
+}
+.intro2 h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6em;
+    width: 6em;
+    margin: 0;
+}
+/* .wlc p {
+    font-size: 1.5em;
+    padding-top: 0;
+    float: left;
+  } */
+  .intro-img{
+    position: absolute;
+    top: 11em;
+    top: 58em;
+    left: 65em;
+    height: 60em;
+    width: 80em;
+    
+    
+  }
 
 main .code-editor {
-    float: right;
-    width: 50%;
-    margin-left: 100px;
+  float: right;
+  width: 50%;
+  margin-left: 100px;
 }
 
 .container {
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .container .course-image {
-    width: 50%;
+  width: 50%;
 }
 
 .container .course-discription {
-    width: 50%;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .wlc {
-    width: 99%;
-    height: 100%;
+  width: 99%;
+  height: 100%;
 }
 
-.wlc .text p {
-    font-size: 40px;
-    padding-top: 70px;
-    text-align: justify;
-    float: left;
-    width: 50%;
-}
+
 
 .wlc.photo {
-    height: 200px;
-    float: right;
+  height: 200px;
+  float: right;
 }
 
 .wlc .photo img {
-    float: right;
-    height: 800px;
-    width: 800px;
+  float: right;
+  height: 800px;
+  width: 800px;
 }
 
 .video div {
-    /* position: relative; */
-    margin-left: 50px;
+  /* position: relative; */
+  margin-left: 50px;
 }
 
 .video #demi {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .courses div {
-    display: inline-block;
-    color: black;
-    background-color: white;
+  display: inline-block;
+  color: black;
+  background-color: white;
 }
 
 .courses div img {
-    height: 200px;
-    width: 285px;
-    text-align: center;
+  height: 200px;
+  width: 285px;
+  text-align: center;
 }
 
-
-
-.courses div #a{
-  
-    padding-top: 30px;
+.courses div #a {
+  padding-top: 30px;
 }
 
 .courses div h4 {
-    padding-right: 30px;
-    padding-bottom: 10px;
-    text-decoration: line-through;
-    float: right;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  text-decoration: line-through;
+  float: right;
 }
 
-
-
-
-
-
-.courses div #a{
-  
-    padding-top: 30px;
+.courses div #a {
+  padding-top: 30px;
 }
 
 .courses div h4 {
-    padding-right: 30px;
-    padding-bottom: 10px;
-    text-decoration: line-through;
-    float: right;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  text-decoration: line-through;
+  float: right;
 }

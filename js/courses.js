@@ -18,7 +18,7 @@ for (let i = 0; i < Course.allCourses.length; i++) {
   div2.setAttribute("style", "width: 18rem");
   btn.setAttribute("value", Course.allCourses[i].key);
   btn.addEventListener("click", addToCart);
-
+document.style
   coursesRaw.appendChild(div1);
   div1.appendChild(div2);
   div2.appendChild(img);

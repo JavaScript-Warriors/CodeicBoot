@@ -35,6 +35,16 @@ function generateCourses() {
         'php', 250,'assets/php4.png');
     new Course('php5', 'Introduction to JavaScript.','Another great JavaScript course available for the programming greenhorns is the Introduction to JavaScript course offered by freecodecamp.org.Aimed for beginners in JS that have little to no experience working with the web scripting language, Introduction to JavaScript covers topics varying from data types and variables to JS objects and loops.One of the major attractions of this course is that a coding test follows each chapter. Hence, immediately after gulping up the new concepts, you can check how well you have grasped them with the practice exercises.',
         'php', 57,'assets/php5.png');
+    new Course('rt1', 'ReactJS for beginners', 'React - The Complete Guide (incl Hooks, React Router, Redux)Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!',
+        'rt', 50, 'assets/rt1.jpg');
+    new Course('rt2', 'ReactJS for newbies', 'Master React and Redux with React Router, Webpack, and Create-React-App. Includes Hooks! Realize the power of building composable components and Master fundamental concepts behind structuring Redux applications',
+        'rt', 100, 'assets/rt2.jpg');
+    new Course('rt3', 'ReactJS from zero to hero', 'React from zero to heroe - The Complete Guide (incl Hooks, React Router, Redux)Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!',
+        'rt', 80, 'assets/rt3.jpg');
+    new Course('rt4', 'React - the complete giude', 'Apply for high-paid jobs or work as a freelancer in one the most-demanded sectors you can find in web dev right now and Build powerful, fast, user-friendly and reactive web apps',
+        'rt', 88, 'assets/rt4.jpg');
+    new Course('rt5', 'react from zero to ninja', 'Learn Modern React 16.8+ Including Hooks, Context API, Full Stack MERN & Redux By Building Real Life Projects and Full Stack Development with MERN (MongoDB, Express, React, Node)',
+        'rt', 150, 'assets/rt5.jpg');
 }
 
 generateCourses();

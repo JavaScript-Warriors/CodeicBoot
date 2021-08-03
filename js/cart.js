@@ -1,33 +1,21 @@
-
-
 'use strict';
 
 let sum = 0;
-
-
 let discount = JSON.parse(localStorage.getItem('discount'));
 
 function x() {
     let item = [],
         keys = Object.keys(localStorage),
         i = keys.length;
-
     while (i--) {
         if (keys[i] !== 'discount' && keys[i] !== 'allCourses' && keys[i] !== 'counter') {
             item.push(JSON.parse(localStorage.getItem(keys[i])));
         }
-
     }
-    console.log(item);
     return item;
 }
 
-
-
 let cartItem = x();
-
-console.log(cartItem[0].name);
-
 let table = document.getElementById('table');
 
 function hedarForTable() {
@@ -56,9 +44,8 @@ hedarForTable();
 bodyForTable();
 footerForTable();
 
-
-
 function footerForTable() {
+
     // let trElemantForFooter = document.createElement('tr');
     // table.appendChild(trElemantForFooter);
 
@@ -166,9 +153,8 @@ function footerForTable() {
     tdElemant23.textContent=`${discountValeu} $ `;
     
 
+
 }
-
-
 
 function clearCart() {
     sum = 0;
@@ -188,53 +174,36 @@ function clearCart() {
 
 function bodyForTable() {
 
-
-
-
-
-
-
     for (let i = 0; i < cartItem.length; i++) {
         let trElemantForBody = document.createElement('tr');
         table.appendChild(trElemantForBody);
-
         let btndele = document.createElement('button');
         trElemantForBody.appendChild(btndele);
         btndele.setAttribute('value', cartItem[i].key);
         btndele.textContent = 'X';
+
         btndele.classList='RemoveIcon';
 
         btndele.addEventListener('click', removeItemFromCart);
-
         let thElemantForBody = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody);
         let imgele = document.createElement('img');
         thElemantForBody.appendChild(imgele);
         thElemantForBody.classList='imgesList';
         imgele.setAttribute('src', cartItem[i].src);
-        console.log(imgele);
-
-
         let thElemantForBody1 = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody1);
         thElemantForBody1.textContent = cartItem[i].name;
+
         thElemantForBody1.classList='NameList';
 
         let thElemantForBody2 = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody2);
 
+
         thElemantForBody2.textContent = cartItem[i].price;
         sum += cartItem[i].price;
-
-
-
     }
-
-
-
-
-
-
 }
 
 function removeItemFromCart() {
@@ -247,15 +216,25 @@ function removeItemFromCart() {
     footerForTable();
 }
 
+let shown = false;
+let checkoutButton = document.getElementById('checkout-button');
+checkoutButton.addEventListener('click',
+    function myFunction() {
 
-function myFunction() {
-    let x = document.getElementById('a');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
+        let form = document.getElementById('a');
+        let checkoutButton = document.getElementById('checkout-button');
+
+        if(!shown) {
+            form.style.display = 'block';
+            checkoutButton.innerText = 'hide checkout form';
+            shown = !shown;
+        } else {
+            form.style.display = 'none';
+            checkoutButton.innerText = 'proceed to checkout';
+            shown = !shown;
+        }
     }
-}
+);
 
 let payForm = document.getElementById('a');
 payForm.addEventListener('submit', paySubmit);

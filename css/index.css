@@ -20,10 +20,11 @@ main{
     font-size: 3em;
     width: 10em;
     }
-    .intro h2 {
+    .intro .h2 {
         color: rgb(19, 133, 197);
         text-align: left;  
         font-size: 1.2em; 
+        font-weight: bold;
     }
     .intro p, .intro2 p {
         font-size: 1.2em;

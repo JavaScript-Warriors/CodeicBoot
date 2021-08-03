@@ -22,15 +22,19 @@ function hedarForTable() {
 
     let trElemant = document.createElement('tr');
     table.appendChild(trElemant);
+    trElemant.classList = 'header';
     let thElemant1 = document.createElement('th');
     trElemant.appendChild(thElemant1);
     thElemant1.textContent = 'Remove Icon';
+    thElemant1.classList='RemoveIconn';
     let thElemant2 = document.createElement('th');
     trElemant.appendChild(thElemant2);
     thElemant2.textContent = 'imges';
+    thElemant2.classList='imgesList';
     let thElemant3 = document.createElement('th');
     trElemant.appendChild(thElemant3);
     thElemant3.textContent = 'Name';
+    thElemant3.classList='NameList';
     let thElemant4 = document.createElement('th');
     trElemant.appendChild(thElemant4);
     thElemant4.textContent = 'Price';
@@ -41,47 +45,131 @@ bodyForTable();
 footerForTable();
 
 function footerForTable() {
-    let trElemantForFooter = document.createElement('tr');
-    table.appendChild(trElemantForFooter);
-    let thElemantForFooter1 = document.createElement('th');
-    trElemantForFooter.appendChild(thElemantForFooter1);
-    thElemantForFooter1.textContent = 'Total Price';
-    let discountfooter = document.createElement('tr');
-    table.appendChild(discountfooter);
-    discountfooter.textContent = 'Discount';
-    let discountfooter1 = document.createElement('th');
-    discountfooter.appendChild(discountfooter1);
-    let discountfooter11 = document.createElement('th');
-    discountfooter.appendChild(discountfooter11);
-    let discountfooter111 = document.createElement('th');
-    discountfooter.appendChild(discountfooter111);
-    discountfooter111.textContent = `${discount * 100} %`;
+
+    // let trElemantForFooter = document.createElement('tr');
+    // table.appendChild(trElemantForFooter);
+
+    // trElemantForFooter.classList = 'footer';
+    // let thElemantForFooter1 = document.createElement('th');
+    // trElemantForFooter.appendChild(thElemantForFooter1);
+    // thElemantForFooter1.textContent = 'Total Price';
+
+
+    // let discountfooter = document.createElement('tr');
+    // table.appendChild(discountfooter);
+
+    // discountfooter.textContent = 'Discount';
+    // discountfooter.classList = 'footer';
+
+
+    // let discountfooter1 = document.createElement('th');
+
+    // discountfooter.appendChild(discountfooter1);
+
+    // let discountfooter11 = document.createElement('th');
+
+    // discountfooter.appendChild(discountfooter11);
+    // let discountfooter111 = document.createElement('th');
+
+    // discountfooter.appendChild(discountfooter111);
+    // discountfooter111.textContent = `${discount * 100} %`;
+
+
+
+
     let discountValeu = sum - (discount * sum);
-    let discountfooter12 = document.createElement('tr');
-    table.appendChild(discountfooter12);
-    discountfooter12.textContent = 'Total After Discount';
-    let discountfooter123 = document.createElement('th');
-    discountfooter12.appendChild(discountfooter123);
-    let discountfooter1231 = document.createElement('th');
-    discountfooter12.appendChild(discountfooter1231);
-    let discountfooter231 = document.createElement('th');
-    discountfooter12.appendChild(discountfooter231);
-    discountfooter231.textContent = `${discountValeu} $`;
-    let thElemantForFooter2 = document.createElement('th');
-    trElemantForFooter.appendChild(thElemantForFooter2);
-    let trElemant = document.createElement('th');
-    trElemantForFooter.appendChild(trElemant);
-    let thElemantForFooter20 = document.createElement('th');
-    trElemantForFooter.appendChild(thElemantForFooter20);
-    thElemantForFooter20.textContent = `${sum} $`;
+
+
+
+    // let discountfooter12 = document.createElement('tr');
+    // table.appendChild(discountfooter12);
+    // discountfooter12.classList = 'footer';
+    // discountfooter12.textContent = 'Total After Discount';
+
+
+
+    // let discountfooter123 = document.createElement('th');
+
+    // discountfooter12.appendChild(discountfooter123);
+    // let discountfooter1231 = document.createElement('th');
+
+    // discountfooter12.appendChild(discountfooter1231);
+    // let discountfooter231 = document.createElement('th');
+
+    // discountfooter12.appendChild(discountfooter231);
+
+    // discountfooter231.textContent = `${discountValeu} $`;
+
+
+
+
+
+
+
+
+    // let thElemantForFooter2 = document.createElement('th');
+    // trElemantForFooter.appendChild(thElemantForFooter2);
+    // let trElemant = document.createElement('th');
+    // trElemantForFooter.appendChild(trElemant);
+    // let thElemantForFooter20 = document.createElement('th');
+    // trElemantForFooter.appendChild(thElemantForFooter20);
+
+
+
+    // thElemantForFooter20.textContent = `${sum} $`;
+
+
+
+
+
+    let totalTable=document.getElementById('totalTable');
+    let trElemantForTotal=document.createElement('tr');
+    totalTable.appendChild(trElemantForTotal);
+    let tdElemant1=document.createElement('td');
+    trElemantForTotal.appendChild(tdElemant1);
+    tdElemant1.textContent='Total Price';
+    let tdElemant2=document.createElement('td');
+    trElemantForTotal.appendChild(tdElemant2);
+    tdElemant2.textContent=`${sum} $ `;
+
+    
+    let trElemantForTotal0=document.createElement('tr');
+    totalTable.appendChild(trElemantForTotal0);
+    let tdElemant10=document.createElement('td');
+    trElemantForTotal0.appendChild(tdElemant10);
+    tdElemant10.textContent='Discount';
+    let tdElemant20=document.createElement('td');
+    trElemantForTotal0.appendChild(tdElemant20);
+    tdElemant20.textContent=`${discount * 100} %`;
+
+    
+    let trElemantForTotal3=document.createElement('tr');
+    totalTable.appendChild(trElemantForTotal3);
+    let tdElemant13=document.createElement('td');
+    trElemantForTotal3.appendChild(tdElemant13);
+    tdElemant13.textContent='Total After Discount';
+    let tdElemant23=document.createElement('td');
+    trElemantForTotal3.appendChild(tdElemant23);
+    tdElemant23.textContent=`${discountValeu} $ `;
+    
+
+
 }
 
 function clearCart() {
     sum = 0;
+   
     while (table.rows.length > 0) {
-        table.deleteRow(0);
+        // table.deleteRow(0);
+        document.getElementById('table').deleteRow(0);
+        // document.getElementById('totalTable').deleteRow(0);
+        // document.getElementById('totalTable').deleteCell(0);
+        
+        
     }
-
+    document.getElementById('totalTable').deleteRow(2);
+    document.getElementById('totalTable').deleteRow(1);
+    document.getElementById('totalTable').deleteRow(0);
 }
 
 function bodyForTable() {
@@ -93,17 +181,26 @@ function bodyForTable() {
         trElemantForBody.appendChild(btndele);
         btndele.setAttribute('value', cartItem[i].key);
         btndele.textContent = 'X';
+
+        btndele.classList='RemoveIcon';
+
         btndele.addEventListener('click', removeItemFromCart);
         let thElemantForBody = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody);
         let imgele = document.createElement('img');
         thElemantForBody.appendChild(imgele);
+        thElemantForBody.classList='imgesList';
         imgele.setAttribute('src', cartItem[i].src);
         let thElemantForBody1 = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody1);
         thElemantForBody1.textContent = cartItem[i].name;
+
+        thElemantForBody1.classList='NameList';
+
         let thElemantForBody2 = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody2);
+
+
         thElemantForBody2.textContent = cartItem[i].price;
         sum += cartItem[i].price;
     }
@@ -112,6 +209,7 @@ function bodyForTable() {
 function removeItemFromCart() {
     localStorage.removeItem(this.value);
     cartItem = x();
+   
     clearCart();
     hedarForTable();
     bodyForTable();

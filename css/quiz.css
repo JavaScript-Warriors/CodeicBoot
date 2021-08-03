@@ -1,0 +1,32 @@
+body{
+    margin-top: 10em;
+padding: 0 9% 0;
+background-color: whitesmoke;
+}
+#quiz{
+    border-style: double;
+    background-color: rgb(225, 231, 233);
+}
+#quiz div {
+    border-style:groove;
+    padding-left: 4%;
+    margin-top: 2%;
+    background-color: rgb(200, 229, 236);
+}
+.questiontext{
+    font-weight: bolder;
+}
+#quiz h2{
+    text-align: center;
+}
+#shwoResult{
+
+width:15%;
+height: 3em;
+text-align: center;
+/* position: unset; */
+margin-left: 45%;
+margin-bottom: 2%;
+font-size: 150%;
+
+}

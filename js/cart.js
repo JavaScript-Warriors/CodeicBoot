@@ -38,11 +38,11 @@ function hedarForTable() {
     let thElemant1 = document.createElement('th');
     trElemant.appendChild(thElemant1);
     thElemant1.textContent = 'Remove Icon';
-    thElemant1.classList='RemoveIcon';
+    thElemant1.classList='RemoveIconn';
     let thElemant2 = document.createElement('th');
     trElemant.appendChild(thElemant2);
     thElemant2.textContent = 'imges';
-    
+    thElemant2.classList='imgesList';
     let thElemant3 = document.createElement('th');
     trElemant.appendChild(thElemant3);
     thElemant3.textContent = 'Name';
@@ -135,7 +135,6 @@ function footerForTable() {
 
 
 
-    console.log(table);
     let totalTable=document.getElementById('totalTable');
     let trElemantForTotal=document.createElement('tr');
     totalTable.appendChild(trElemantForTotal);
@@ -175,11 +174,16 @@ function clearCart() {
     sum = 0;
    
     while (table.rows.length > 0) {
-        table.deleteRow(0);
+        // table.deleteRow(0);
+        document.getElementById('table').deleteRow(0);
+        // document.getElementById('totalTable').deleteRow(0);
+        // document.getElementById('totalTable').deleteCell(0);
         
         
     }
-
+    document.getElementById('totalTable').deleteRow(2);
+    document.getElementById('totalTable').deleteRow(1);
+    document.getElementById('totalTable').deleteRow(0);
 }
 
 function bodyForTable() {
@@ -206,6 +210,7 @@ function bodyForTable() {
         trElemantForBody.appendChild(thElemantForBody);
         let imgele = document.createElement('img');
         thElemantForBody.appendChild(imgele);
+        thElemantForBody.classList='imgesList';
         imgele.setAttribute('src', cartItem[i].src);
         console.log(imgele);
 

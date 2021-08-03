@@ -16,6 +16,7 @@ const Course = function (key, name, description, cateogry, price, imgSrc) {
 Course.allCourses = [];
 
 function generateCourses() {
+
     new Course('js1', 'JavaScript for Beginners', 'The JavaScript for Beginners course aims to build an in-depth understanding of the various aspects of JS that are mandatory for understanding how JavaScript applications work. With 3 hours of on-demand video, this course is one of the most compact and practical beginner-friendly JS courses. About 3k learners have benefitted from this course. You will be awarded a certificate on the successful completion to showcase all the efforts and hard work you put in for the course.',
         'js', 150, 'assets/js1.png');
     new Course('js2', 'Modern JavaScript From The Beginning.', 'The Modern JavaScript From the Beginning tutorial focuses on building projects without using any JS frameworks or libraries. It boasts an excellent 4.7-star rating averaged over 11k reviews. Other than English, the course is also available in Italian, Portuguese, and Spanish languages.',
@@ -56,6 +57,7 @@ function generateCourses() {
         'rt', 88, 'assets/rt4.jpg');
     new Course('rt5', 'react from zero to ninja', 'Learn Modern React 16.8+ Including Hooks, Context API, Full Stack MERN & Redux By Building Real Life Projects and Full Stack Development with MERN (MongoDB, Express, React, Node)',
         'rt', 150, 'assets/rt5.jpg');
+
 
 
 }

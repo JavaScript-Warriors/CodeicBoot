@@ -15,7 +15,7 @@ function check() {
     quiz.style.display = "none";
    
     result.textContent = `Unfortunately, your grade is ${c} `;
-    let disValue = 1;
+    let disValue = 0;
     if (c == 3) {
         
         result.textContent = `Congratulations, your grade is ${c} you got 10% off.`;

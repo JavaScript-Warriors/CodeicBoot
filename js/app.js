@@ -35,6 +35,18 @@ function generateCourses() {
         'php', 250,'assets/php4.png');
     new Course('php5', 'Introduction to JavaScript.','Another great JavaScript course available for the programming greenhorns is the Introduction to JavaScript course offered by freecodecamp.org.Aimed for beginners in JS that have little to no experience working with the web scripting language, Introduction to JavaScript covers topics varying from data types and variables to JS objects and loops.One of the major attractions of this course is that a coding test follows each chapter. Hence, immediately after gulping up the new concepts, you can check how well you have grasped them with the practice exercises.',
         'php', 57,'assets/php5.png');
+
+        
+    new Course('pyt1', 'Python for Absolute Beginners','Learn Python, a programming language with a wide variety of well-paying jobs in many fields, including data science and web development.  It is relatively easy to learn when compared to pretty much any other programming language since most of the time, using Python to do something will take less lines of code than with another programming language.',
+        'pyt',100 ,'assets/pyt1');
+    new Course('pyt2', '2021 Complete Python Bootcamp From Zero to Hero in Python','This is the most comprehensive, yet straight-forward, course for the Python programming language on Udemy! Whether you have never programmed before, already know basic syntax, or want to learn about the advanced features of Python, this course is for you! In this course we will teach you Python 3.',
+        'pyt',120 ,'assets/pyt2');
+    new Course('pyt3','Learn Python Programming Masterclass','This course is aimed at complete beginners who have never programmed before, as well as existing programmers who want to increase their career options by learning Python. The fact is, Python is one of the most popular programming languages in the world – Huge companies like Google use it in mission critical applications like Google Search.',
+        'pyt', 280 ,'assets/pyt3');
+    new Course('pyt4', 'Learning Python for Data Analysis and Visualization ',' You will get a full understanding of how to program with Python and how to use it in conjunction with scientific computing modules and libraries to analyze data. You will also get lifetime access to over 100 example python code notebooks, new and updated videos, as well as future additions of various data analysis projects that you can use for a portfolio to show future employers!',
+        'pyt',200 ,'assets/pyt4');
+    new Course('pyt5','The Python Mega Course: Build 10 Real World Applications ','he Python Mega Course is the most practical course you will find on the web today. In this course, rather than practicing rote memorization, students are actively problem-solving towards tangible goals. The purpose of this course is to get you from zero and help you become a Python programmer. We will achieve that by building actual desktop programs, developing interactive web applications, automating tasks, and even creating mobile apps entirely in Python 3.',
+        'pyt', 220,'assets/pyt5');
 }
 
 generateCourses();

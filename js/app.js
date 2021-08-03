@@ -17,6 +17,14 @@ Course.allCourses = [];
 
 function generateCourses() {
 
+// omar's added
+        new Course('nj1','The Complete Node.js Developer Course',' Have you tried to learn Node before? You start a new course, and the instructor has you installing a bunch of libraries before you even know what Node is or how it works. You eventually get stuck and reach out to the instructor, but you get no reply. You then close the course and never open it again.','node.js ',70 ,'imgs/nodeJS1.jpg');
+        new Course('nj2','Microservices with Node JS and React','Microservices are the number one solution for building and scaling out apps that are intended to grow.  Just one little issue: there are few resources online that delve into the most complex and nasty issues around them!  I built this course to fix that.  This course tackles every major issues around microservices head on. From challenges with data replication to confusing unordered event streams, every major challenge of building microservices is covered. ','node.js ', 120,'imgs/nodeJS2.jpeg');
+        new Course('nj3','Learn and Understand NodeJS','Event-Based Architecture? Covered! Server side rendering with React? Yep.  Scalable, production-ready code? Its here!','node.js ',85 ,'imgs/nodeJS3.jpg');
+        new Course('nj4','The Complete Node.js Developer Course (3rd Edition)','NodeJS is a rapidy growing web server technology, and Node developers are among the highest paid in the industry. Knowing NodeJS well will get you a job or improve your current one by enabling you to build high quality, robust web applications.','node.js ',65 ,'imgs/nodeJS4.jpg');
+        new Course('nj5','MERN Stack Front To Back: Full Stack React, Redux & Node.js','Welcome to "MERN Stack Front To Back". In this course we will build an in depth full stack social network application using Node.js, Express, React, Redux and MongoDB along with ES6+. We will start with a blank text editor and end with a deployed full stack application.','node.js ',90 ,'imgs/nodeJS5.jpeg');
+
+
     new Course('js1', 'JavaScript for Beginners', 'The JavaScript for Beginners course aims to build an in-depth understanding of the various aspects of JS that are mandatory for understanding how JavaScript applications work. With 3 hours of on-demand video, this course is one of the most compact and practical beginner-friendly JS courses. About 3k learners have benefitted from this course. You will be awarded a certificate on the successful completion to showcase all the efforts and hard work you put in for the course.',
         'js', 150, 'assets/js1.png');
     new Course('js2', 'Modern JavaScript From The Beginning.', 'The Modern JavaScript From the Beginning tutorial focuses on building projects without using any JS frameworks or libraries. It boasts an excellent 4.7-star rating averaged over 11k reviews. Other than English, the course is also available in Italian, Portuguese, and Spanish languages.',
@@ -57,6 +65,7 @@ function generateCourses() {
         'rt', 88, 'assets/rt4.jpg');
     new Course('rt5', 'react from zero to ninja', 'Learn Modern React 16.8+ Including Hooks, Context API, Full Stack MERN & Redux By Building Real Life Projects and Full Stack Development with MERN (MongoDB, Express, React, Node)',
         'rt', 150, 'assets/rt5.jpg');
+
 
 
 

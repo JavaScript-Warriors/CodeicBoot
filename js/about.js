@@ -19,7 +19,7 @@ function carousel() {
   x[myIndex-1].style.display = "block"; 
   y[myIndex-1].style.display = "block";
   z[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 500); // Change image every 0.5 seconds
+  setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
 

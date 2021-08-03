@@ -1,12 +1,14 @@
-table,tr,th,td{
+/* table,tr,th,td{
     border: 1px solid black;
     border-collapse: collapse;
-}
+} */
 
 
 img{
 
-    width: 200px;
+  width: 30%;
+height: 20%;
+margin-left: 10%;
 }
 
 
@@ -49,3 +51,58 @@ img{
       background-color: #f2f2f2;
       padding: 20px;
     }
+
+    .footer {
+      color: brown;
+      
+    }
+    #table{
+
+      width: 80%;
+      border-collapse: collapse;
+      margin-left: 10%;
+    }
+    .remove{
+
+      width: 20px;
+      background-color: red;
+    }
+    .header{
+
+      /* text-align-last:right ; */
+      padding: 5px;
+      color: white;
+      background-color: navy;
+      font-weight:normal ;
+    }
+    th{
+      padding: 10px 5px ;
+    }
+  
+   #total{
+
+    display: flex;
+    justify-content: flex-end;
+   }
+   #totalTable{
+
+    border-top:3px solid navy ;
+    width: 100%;
+    max-width: 400px;
+   }
+   td:last-child , th:last-child{
+
+    text-align: right;
+   }
+   .NameList{
+text-align: left;
+padding-right: 20%;
+
+   }
+   .RemoveIcon{
+    margin-left: 20%;
+    text-align: center;
+    padding-right: 20%;
+    background-color: red;
+
+   }

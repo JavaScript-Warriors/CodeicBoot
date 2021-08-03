@@ -1,5 +1,4 @@
 "use strict";
-console.log(Course.allCourses);
 
 let coursesRaw = document.getElementById("courses-col");
 
@@ -39,16 +38,14 @@ let coursesInCart = [];
 
 function addToCart() {
 
-  for (let i = 0; i < Course.allCourses.length; i++) {
-    if (this.value === Course.allCourses[i].key) {
-      coursesInCart.push(Course.allCourses[i]);
+    for (let i = 0; i < Course.allCourses.length; i++) {
+        if (this.value === Course.allCourses[i].key) {
+            coursesInCart.push(Course.allCourses[i]);
+        }
     }
-  }
 
-  for (let i = 0; i < coursesInCart.length; i++) {
-    let courseStored = JSON.stringify(coursesInCart[i]);
-    console.log(courseStored);
-    localStorage.setItem(coursesInCart[i].key, courseStored);
-    
-  }
+    for (let i = 0; i < coursesInCart.length; i++) {
+        let courseStored = JSON.stringify(coursesInCart[i]);
+        localStorage.setItem(coursesInCart[i].key, courseStored);
+    }
 }

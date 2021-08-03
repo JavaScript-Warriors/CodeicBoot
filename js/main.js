@@ -1,5 +1,4 @@
 let allCourses = JSON.parse(localStorage.getItem('allCourses'));
-console.log(allCourses);
 let shownBefore = [];
 function getRandomIndex() {
     return Math.floor(Math.random() * allCourses.length);

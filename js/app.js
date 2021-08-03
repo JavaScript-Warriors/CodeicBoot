@@ -46,43 +46,25 @@ function generateCourses() {
         'c', 130, 'assets/c4.jpg');
     new Course('c5', 'This "critically-acclaimed" and "insanely successful" Unreal Engine course was created in collaboration with Epic Games.The course has been fully updated and remastered to Unreal Engine 4.22+. Existing students get all the new material for free.',
         'c', 200, 'assets/c5.jpg');
+    new Course('rt1', 'ReactJS for beginners', 'React - The Complete Guide (incl Hooks, React Router, Redux)Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!',
+        'rt', 50, 'assets/rt1.jpg');
+    new Course('rt2', 'ReactJS for newbies', 'Master React and Redux with React Router, Webpack, and Create-React-App. Includes Hooks! Realize the power of building composable components and Master fundamental concepts behind structuring Redux applications',
+        'rt', 100, 'assets/rt2.jpg');
+    new Course('rt3', 'ReactJS from zero to hero', 'React from zero to heroe - The Complete Guide (incl Hooks, React Router, Redux)Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!',
+        'rt', 80, 'assets/rt3.jpg');
+    new Course('rt4', 'React - the complete giude', 'Apply for high-paid jobs or work as a freelancer in one the most-demanded sectors you can find in web dev right now and Build powerful, fast, user-friendly and reactive web apps',
+        'rt', 88, 'assets/rt4.jpg');
+    new Course('rt5', 'react from zero to ninja', 'Learn Modern React 16.8+ Including Hooks, Context API, Full Stack MERN & Redux By Building Real Life Projects and Full Stack Development with MERN (MongoDB, Express, React, Node)',
+        'rt', 150, 'assets/rt5.jpg');
 
 
 }
 
 generateCourses();
 
-
-// let sale1 = document.getElementById('c-sale-1');
-// let img = document.createElement('img');
-// let h5 = document.createElement('h5');
-// let p = document.createElement('p');
-// let hr = document.createElement('hr');
-// let a = document.createElement('a');
-// let h4 = document.createElement('h4');
-
-// img.setAttribute('src', Course.allCourses[0].src);
-// a.setAttribute('href','cart.html');
-// p.setAttribute('style','height:92px; overflow: hidden; text-overflow: ellipsis;');
-
-// sale1.appendChild(img);
-// sale1.appendChild(h5);
-// sale1.appendChild(p);
-// sale1.appendChild(hr);
-// sale1.appendChild(a);
-// sale1.appendChild(h4);
-
-// h5.textContent = Course.allCourses[0].name;
-// p.textContent = Course.allCourses[0].description;
-// h4.textContent = Course.allCourses[0].price;
-// a.textContent = 'Add to cart';
-
 localStorage.setItem('allCourses', JSON.stringify(Course.allCourses));
-console.log('ALL FROM APP.JS', Course.allCourses);
 
 let cartIcon = document.getElementById('cartIcon');
-
-// let counter=JSON.parse(localStorage.getItem('counter'));
 
 function x() {
     let item = [],
@@ -95,15 +77,7 @@ function x() {
         }
 
     }
-    console.log(item);
     return item;
 }
-let cartItem = x();
-counter=cartItem.length;
-console.log(counter);
-if (counter==0) {
-    cartIcon.textContent=`Cart  `;  
-} else {
-    cartIcon.textContent=`Cart ${counter} `;  
-}
+
 

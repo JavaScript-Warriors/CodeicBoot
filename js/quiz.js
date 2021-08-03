@@ -8,7 +8,6 @@ function check() {
     let result = document.getElementById('result');
     let quiz = document.getElementById('quiz');
     if (q1 == 'HyperText Markup Language') { c++ };
-    console.log(q1);
     if (q2 == "True") { c++ };
     if (q3 == "alert('Hellow World')") { c++ };
     if (q4 == "style") { c++ };

@@ -63,7 +63,6 @@ function generateCourses() {
 generateCourses();
 
 localStorage.setItem('allCourses', JSON.stringify(Course.allCourses));
-console.log('ALL FROM APP.JS', Course.allCourses);
 
 let cartIcon = document.getElementById('cartIcon');
 

@@ -2,6 +2,10 @@
 * {
     box-sizing: border-box;
    }
+   body{
+
+    background-color: whitesmoke;
+   }
   
    input[name=feedBack] {
       
@@ -54,10 +58,49 @@
   }
   input[type=submit]:hover {
    background-color: #45a049;
+   
   }
   #form {
    border-radius: 5px;
    background-color: #f2f2f2;
    padding: 20px;
+   width: 75%;
+   margin-left: 10%;
+  }
+  h2{
+
+    font-size: 30px;
   }
    
+  #aboutOurWebpage , #JavaScript-Warriors{
+    text-align: justify;
+    padding: 50px;
+    letter-spacing: 0.8px;
+    line-height: 1.8;
+    word-spacing: 1.5px;
+    
+  }
+  #aboutOurWebpage h2 , #JavaScript-Warriors h2 {
+    text-transform: uppercase;
+    padding: 100px;
+  }
+.pargraph , .text{
+  text-align: center;
+  padding: 12px;
+  letter-spacing: 0.8px;
+  line-height: 1.8;
+  word-spacing: 1.5px;
+}
+.mySlides{
+  display: block;
+  margin-left: 100%;
+  
+  width: 50%;
+  border-radius: 50%;
+  
+}
+#slideShow{
+
+  background-color: whitesmoke;
+}
+

@@ -173,7 +173,7 @@ main .code-editor {
     flex-direction: column-reverse;
     justify-content: space-evenly;
 }
-.purchase .add-to-cart {
+.purchase .see-course {
     width: 40%;
     /* height: 10%; */
     background-color: #FFD523;
@@ -184,7 +184,7 @@ main .code-editor {
     font-size: 15px;
     font-weight: bold;
 }
-.add-to-cart:hover {
+.see-course:hover {
     background-color: #595260;
     color: #FFD523;
 }

@@ -1,9 +1,7 @@
 'use strict';
 
 let sum = 0;
-
-let discount = JSON.parse(localStorage.getItem('discount'))
-
+let discount = JSON.parse(localStorage.getItem('discount'));
 
 function x() {
     let item = [],
@@ -17,7 +15,6 @@ function x() {
     return item;
 }
 
-
 let cartItem = x();
 let table = document.getElementById('table');
 
@@ -29,22 +26,19 @@ function hedarForTable() {
     let thElemant1 = document.createElement('th');
     trElemant.appendChild(thElemant1);
     thElemant1.textContent = 'Remove Icon';
-
-
+    thElemant1.classList='RemoveIconn';
     let thElemant2 = document.createElement('th');
     trElemant.appendChild(thElemant2);
     thElemant2.textContent = 'imges';
-
+    thElemant2.classList='imgesList';
     let thElemant3 = document.createElement('th');
     trElemant.appendChild(thElemant3);
     thElemant3.textContent = 'Name';
-
-
+    thElemant3.classList='NameList';
     let thElemant4 = document.createElement('th');
     trElemant.appendChild(thElemant4);
     thElemant4.textContent = 'Price';
 }
-
 
 hedarForTable();
 bodyForTable();
@@ -55,63 +49,63 @@ function footerForTable() {
     // let trElemantForFooter = document.createElement('tr');
     // table.appendChild(trElemantForFooter);
 
-
-function footerForTable() {
-    
-    let trElemantForFooter = document.createElement('tr');
-    table.appendChild(trElemantForFooter);
-
+    // trElemantForFooter.classList = 'footer';
+    // let thElemantForFooter1 = document.createElement('th');
+    // trElemantForFooter.appendChild(thElemantForFooter1);
+    // thElemantForFooter1.textContent = 'Total Price';
 
 
     // let discountfooter = document.createElement('tr');
     // table.appendChild(discountfooter);
 
-
-    let thElemantForFooter2 = document.createElement('th');
-    trElemantForFooter.appendChild(thElemantForFooter2);
-    
-
-    thElemantForFooter2.textContent = `${sum} $`;
-
-    let trElemant = document.createElement('th');
-    trElemantForFooter.appendChild(trElemant);
+    // discountfooter.textContent = 'Discount';
+    // discountfooter.classList = 'footer';
 
 
-   
+    // let discountfooter1 = document.createElement('th');
+
+    // discountfooter.appendChild(discountfooter1);
+
+    // let discountfooter11 = document.createElement('th');
+
+    // discountfooter.appendChild(discountfooter11);
+    // let discountfooter111 = document.createElement('th');
+
+    // discountfooter.appendChild(discountfooter111);
+    // discountfooter111.textContent = `${discount * 100} %`;
+
+
 
 
     let discountValeu = sum - (discount * sum);
 
 
-    let discountfooter = document.createElement('tr');
 
-
-    table.appendChild(discountfooter);
-
-    discountfooter.textContent = "Discount";
+    // let discountfooter12 = document.createElement('tr');
+    // table.appendChild(discountfooter12);
+    // discountfooter12.classList = 'footer';
+    // discountfooter12.textContent = 'Total After Discount';
 
 
 
     // let discountfooter123 = document.createElement('th');
 
-    let discountfooter1 = document.createElement('th');
+    // discountfooter12.appendChild(discountfooter123);
+    // let discountfooter1231 = document.createElement('th');
 
-    discountfooter.appendChild(discountfooter1);
+    // discountfooter12.appendChild(discountfooter1231);
+    // let discountfooter231 = document.createElement('th');
 
+    // discountfooter12.appendChild(discountfooter231);
 
-    discountfooter1.textContent = `${discount * 100} %`;
-
-
-
-
-
-    let discountValeu = sum - (discount * sum);
+    // discountfooter231.textContent = `${discountValeu} $`;
 
 
 
-    let discountfooter12 = document.createElement('tr');
-    table.appendChild(discountfooter12);
-    discountfooter12.textContent = "Total After Discount";
+
+
+
+
 
     // let thElemantForFooter2 = document.createElement('th');
     // trElemantForFooter.appendChild(thElemantForFooter2);
@@ -122,12 +116,10 @@ function footerForTable() {
 
 
 
-    let discountfooter123 = document.createElement('th');
-
-    discountfooter12.appendChild(discountfooter123);
+    // thElemantForFooter20.textContent = `${sum} $`;
 
 
-    discountfooter123.textContent = `${discountValeu} $`;
+
 
 
     let totalTable=document.getElementById('totalTable');
@@ -193,44 +185,29 @@ function bodyForTable() {
         btndele.classList='RemoveIcon';
 
         btndele.addEventListener('click', removeItemFromCart);
-
-
         let thElemantForBody = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody);
-
         let imgele = document.createElement('img');
         thElemantForBody.appendChild(imgele);
-
+        thElemantForBody.classList='imgesList';
         imgele.setAttribute('src', cartItem[i].src);
-        console.log(imgele);
-
-
-
         let thElemantForBody1 = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody1);
-
         thElemantForBody1.textContent = cartItem[i].name;
 
-
+        thElemantForBody1.classList='NameList';
 
         let thElemantForBody2 = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody2);
+
+
         thElemantForBody2.textContent = cartItem[i].price;
-        
         sum += cartItem[i].price;
-
-
-
     }
-
-
-
 }
 
 function removeItemFromCart() {
-    
-    localStorage.removeItem(this.value)
-
+    localStorage.removeItem(this.value);
     cartItem = x();
    
     clearCart();
@@ -239,19 +216,23 @@ function removeItemFromCart() {
     footerForTable();
 }
 
+let shown = false;
+let checkoutButton = document.getElementById('checkout-button');
+checkoutButton.addEventListener('click',
+    function myFunction() {
 
+        let form = document.getElementById('a');
+        let checkoutButton = document.getElementById('checkout-button');
 
-function myFunction() {
-    let x = document.getElementById('a');
-
-    if (x.style.display === 'none') {
-
-        x.style.display = 'block';
-
-    } else {
-
-        x.style.display = 'none';
-
+        if(!shown) {
+            form.style.display = 'block';
+            checkoutButton.innerText = 'hide checkout form';
+            shown = !shown;
+        } else {
+            form.style.display = 'none';
+            checkoutButton.innerText = 'proceed to checkout';
+            shown = !shown;
+        }
     }
 );
 

@@ -12,10 +12,14 @@ for (let i = 0; i < Course.allCourses.length; i++) {
   let hr = document.createElement("hr");
   let btn = document.createElement("button");
   let h4 = document.createElement("h4");
+  let br =document.createElement("br")
+  let br2 =document.createElement("br")
+
+
 
   div1.setAttribute("class", `mix ${Course.allCourses[i].cateogry}`);
-  div1.setAttribute("style", "border-style: solid");
-  div2.setAttribute("style", "width: 18rem");
+  div1.setAttribute("style", "border-style:");
+  // div2.setAttribute("style", "width: 18rem");
   btn.setAttribute("value", Course.allCourses[i].key);
   btn.addEventListener("click", addToCart);
 document.style
@@ -27,6 +31,11 @@ document.style
   div2.appendChild(hr);
   div2.appendChild(btn);
   div2.appendChild(h4);
+  coursesRaw.appendChild(br);
+  // div2.appendChild(br2);
+  // div2.appendChild(br);
+
+
 
   img.src = Course.allCourses[i].src;
   h5.textContent = Course.allCourses[i].name;

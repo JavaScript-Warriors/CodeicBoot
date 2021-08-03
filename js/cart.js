@@ -13,8 +13,8 @@ function x() {
         i = keys.length;
 
     while (i--) {
-        if (keys[i] != 'discount') {
-            item.push(JSON.parse(localStorage.getItem(keys[i])))
+        if (keys[i] !== 'discount' && keys[i] !== 'allCourses' ) {
+            item.push(JSON.parse(localStorage.getItem(keys[i]))) ;
         }
     }
     console.log(item);

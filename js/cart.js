@@ -4,7 +4,8 @@
 
 let sum = 0;
 
-let discount =JSON.parse(localStorage.getItem('discount'))
+
+let discount = JSON.parse(localStorage.getItem('discount'));
 
 function x() {
     let item = [],
@@ -12,10 +13,10 @@ function x() {
         i = keys.length;
 
     while (i--) {
-        if (keys[i] !== 'discount' && keys[i] !== 'allCourses' ) {
-            item.push(JSON.parse(localStorage.getItem(keys[i]))) ;
+        if (keys[i] !== 'discount' && keys[i] !== 'allCourses' && keys[i] !=='counter') {
+            item.push(JSON.parse(localStorage.getItem(keys[i])));
         }
-        
+
     }
     console.log(item);
     return item;
@@ -62,40 +63,40 @@ function footerForTable() {
     thElemantForFooter1.textContent = 'Total Price';
 
 
-let discountfooter =document.createElement('tr');
-table.appendChild(discountfooter);
+    let discountfooter = document.createElement('tr');
+    table.appendChild(discountfooter);
 
-discountfooter.textContent="Discount";
-
-
-
-let discountfooter1=document.createElement('th');
-
-discountfooter.appendChild(discountfooter1);
-
-
-discountfooter1.textContent=`${discount*100} %`;
+    discountfooter.textContent = 'Discount';
 
 
 
+    let discountfooter1 = document.createElement('th');
 
-let discountValeu = sum - (discount * sum);
+    discountfooter.appendChild(discountfooter1);
 
 
-
-let discountfooter12 =document.createElement('tr');
-table.appendChild(discountfooter12);
-
-discountfooter12.textContent="Total After Discount";
+    discountfooter1.textContent = `${discount * 100} %`;
 
 
 
-let discountfooter123=document.createElement('th');
 
-discountfooter12.appendChild(discountfooter123);
+    let discountValeu = sum - (discount * sum);
 
 
-discountfooter123.textContent=`${discountValeu} $`;
+
+    let discountfooter12 = document.createElement('tr');
+    table.appendChild(discountfooter12);
+
+    discountfooter12.textContent = 'Total After Discount';
+
+
+
+    let discountfooter123 = document.createElement('th');
+
+    discountfooter12.appendChild(discountfooter123);
+
+
+    discountfooter123.textContent = `${discountValeu} $`;
 
 
 
@@ -106,18 +107,18 @@ discountfooter123.textContent=`${discountValeu} $`;
 
     let thElemantForFooter2 = document.createElement('th');
     trElemantForFooter.appendChild(thElemantForFooter2);
-    let trElemant=document.createElement('th');
+    let trElemant = document.createElement('th');
     trElemantForFooter.appendChild(trElemant);
-   
 
-    
+
+
 
     thElemantForFooter2.textContent = `${sum} $`;
 
 
 
- 
-    
+
+
 
 
 }
@@ -132,12 +133,11 @@ function clearCart() {
 
 }
 
-// console.log(cartItems.firstName);
 function bodyForTable() {
 
-    
-        
-    
+
+
+
 
 
 
@@ -151,14 +151,14 @@ function bodyForTable() {
         btndele.textContent = 'X';
 
         btndele.addEventListener('click', removeItemFromCart);
-     
+
         let thElemantForBody = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody);
-        let imgele=document.createElement('img');
+        let imgele = document.createElement('img');
         thElemantForBody.appendChild(imgele);
-        imgele.setAttribute('src',cartItem[i].src);
+        imgele.setAttribute('src', cartItem[i].src);
         console.log(imgele);
-        
+
 
         let thElemantForBody1 = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody1);
@@ -169,8 +169,8 @@ function bodyForTable() {
         thElemantForBody2.textContent = cartItem[i].price;
         sum += cartItem[i].price;
 
+        
 
-      
     }
 
 
@@ -198,3 +198,4 @@ function myFunction() {
         x.style.display = 'none';
     }
 }
+

@@ -1,9 +1,10 @@
-"use strict";
-console.log(Course.allCourses);
+/* eslint-disable no-undef */
+'use strict';
 
-let coursesRaw = document.getElementById("courses-col");
+let coursesRaw = document.getElementById('courses-col');
 
 for (let i = 0; i < Course.allCourses.length; i++) {
+
   let div1 = document.createElement("div");
   let div2 = document.createElement("div");
   let img = document.createElement("img");
@@ -42,22 +43,21 @@ document.style
   p.textContent = Course.allCourses[i].description;
   btn.textContent = "Add to Cart";
   h4.textContent = Course.allCourses[i].price;
+
 }
 
 let coursesInCart = [];
 
 function addToCart() {
 
-  for (let i = 0; i < Course.allCourses.length; i++) {
-    if (this.value === Course.allCourses[i].key) {
-      coursesInCart.push(Course.allCourses[i]);
+    for (let i = 0; i < Course.allCourses.length; i++) {
+        if (this.value === Course.allCourses[i].key) {
+            coursesInCart.push(Course.allCourses[i]);
+        }
     }
-  }
 
-  for (let i = 0; i < coursesInCart.length; i++) {
-    let courseStored = JSON.stringify(coursesInCart[i]);
-    console.log(courseStored);
-    localStorage.setItem(coursesInCart[i].key, courseStored);
-    
-  }
+    for (let i = 0; i < coursesInCart.length; i++) {
+        let courseStored = JSON.stringify(coursesInCart[i]);
+        localStorage.setItem(coursesInCart[i].key, courseStored);
+    }
 }

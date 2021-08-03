@@ -178,7 +178,9 @@ color: #AAAAAA;
 
 
     .code-editor{
-      background-image: url('/imgs/bkg1.jpg');
+      
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 31%, rgba(1,79,172,1) 100%, rgba(0,212,255,1) 100%);
       max-width: 100%;
       margin-top: 6em;
       height: 30em;

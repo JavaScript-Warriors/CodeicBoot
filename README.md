@@ -1,5 +1,6 @@
+
 # CodeicBoot
-Final project of Code201.
+An online codeing & programing courses website.
 
 ## Team members:
 * Amer Alqnahrah.
@@ -10,3 +11,6 @@ Final project of Code201.
 * Qutadah Almomani.
 * Rihan Foudeh.
 
+reference : 
+
+1. [w3schools](https://www.w3schools.com/) for slide show photo . 

@@ -1,5 +1,5 @@
 'use strict';
-let counter ;
+// let counter ;
 
 const Course = function (key, name, description, cateogry, price, imgSrc) {
     this.key = key;
@@ -77,20 +77,19 @@ generateCourses();
 
 localStorage.setItem('allCourses', JSON.stringify(Course.allCourses));
 
-let cartIcon = document.getElementById('cartIcon');
 
-function x() {
-    let item = [],
-        keys = Object.keys(localStorage),
-        i = keys.length;
+// function x() {
+//     let item = [],
+//         keys = Object.keys(localStorage),
+//         i = keys.length;
 
-    while (i--) {
-        if (keys[i] !== 'discount' && keys[i] !== 'allCourses' && keys[i] !=='counter') {
-            item.push(JSON.parse(localStorage.getItem(keys[i])));
-        }
+//     while (i--) {
+//         if (keys[i] !== 'discount' && keys[i] !== 'allCourses' && keys[i] !== counter) {
+//             item.push(JSON.parse(localStorage.getItem(keys[i])));
+//         }
 
-    }
-    return item;
-}
+//     }
+//     return item;
+// }
 
 

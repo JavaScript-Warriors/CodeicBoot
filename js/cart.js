@@ -13,7 +13,7 @@ function x() {
         i = keys.length;
 
     while (i--) {
-        if (keys[i] !== 'discount' && keys[i] !== 'allCourses' && keys[i] !=='counter') {
+        if (keys[i] !== 'discount' && keys[i] !== 'allCourses' && keys[i] !== 'counter') {
             item.push(JSON.parse(localStorage.getItem(keys[i])));
         }
 
@@ -74,8 +74,13 @@ function footerForTable() {
 
     discountfooter.appendChild(discountfooter1);
 
+    let discountfooter11 = document.createElement('th');
 
-    discountfooter1.textContent = `${discount * 100} %`;
+    discountfooter.appendChild(discountfooter11);
+    let discountfooter111 = document.createElement('th');
+
+    discountfooter.appendChild(discountfooter111);
+    discountfooter111.textContent = `${discount * 100} %`;
 
 
 
@@ -94,9 +99,14 @@ function footerForTable() {
     let discountfooter123 = document.createElement('th');
 
     discountfooter12.appendChild(discountfooter123);
+    let discountfooter1231 = document.createElement('th');
 
+    discountfooter12.appendChild(discountfooter1231);
+    let discountfooter231 = document.createElement('th');
 
-    discountfooter123.textContent = `${discountValeu} $`;
+    discountfooter12.appendChild(discountfooter231);
+
+    discountfooter231.textContent = `${discountValeu} $`;
 
 
 
@@ -109,17 +119,18 @@ function footerForTable() {
     trElemantForFooter.appendChild(thElemantForFooter2);
     let trElemant = document.createElement('th');
     trElemantForFooter.appendChild(trElemant);
+    let thElemantForFooter20 = document.createElement('th');
+    trElemantForFooter.appendChild(thElemantForFooter20);
+
+
+
+    thElemantForFooter20.textContent = `${sum} $`;
 
 
 
 
-    thElemantForFooter2.textContent = `${sum} $`;
 
-
-
-
-
-
+    console.log(table);
 
 }
 
@@ -163,13 +174,14 @@ function bodyForTable() {
         let thElemantForBody1 = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody1);
         thElemantForBody1.textContent = cartItem[i].name;
-
+      
         let thElemantForBody2 = document.createElement('th');
         trElemantForBody.appendChild(thElemantForBody2);
+        
         thElemantForBody2.textContent = cartItem[i].price;
         sum += cartItem[i].price;
 
-        
+
 
     }
 
@@ -199,3 +211,14 @@ function myFunction() {
     }
 }
 
+let payForm = document.getElementById('a');
+payForm.addEventListener('submit', paySubmit);
+
+function paySubmit(e) {
+    e.preventDefault();
+    alert('your application has been sent you will receive your courses by e-mail in 2 hours ');
+    clearCart();
+    localStorage.clear();
+    location.reload();
+
+}

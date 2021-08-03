@@ -73,8 +73,8 @@
   }
    
   #aboutOurWebpage , #JavaScript-Warriors{
-    text-align: center;
-    padding: 12px;
+    text-align: justify;
+    padding: 50px;
     letter-spacing: 0.8px;
     line-height: 1.8;
     word-spacing: 1.5px;
@@ -82,6 +82,7 @@
   }
   #aboutOurWebpage h2 , #JavaScript-Warriors h2 {
     text-transform: uppercase;
+    padding: 100px;
   }
 .pargraph , .text{
   text-align: center;

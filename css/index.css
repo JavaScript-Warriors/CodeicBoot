@@ -1,98 +1,3 @@
-body {
-   background-color: #f8f8fa;
-   width: 100%;
-   font-family: Arial, Helvetica, sans-serif;
-
-}
-
-
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    height: 5.5em;
-    box-sizing: border-box;
-    left: 0px;
-    right: 0px;
-    z-index: 2;
-    box-shadow: 0 5px 0 rgb(215 222 226 / 19%);
-}
-
-.logo {
-    padding: 0 5em;
-  }
-.logo-img{
-    height: 70%;
-    padding-top: 5%;
-}
-
-/* .logo a,
-.logo h1 {
-  color: #1978d1;
-  text-decoration: none;
-  font-size: 35px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-} */
-
-nav {
-  align-self: center;
-  margin-top: .6em;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-}
-
-ul li a {
-  margin: 10px;
-  color: #AAAAAA;
-  text-decoration: none;
-  font-size: 1em;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-li{
-  padding-top: 3.5%;
-}
-
-.search input[type=text]{
-  width:25em;
-  height:2em;
-  border-radius:.7em;
-  border: 1px solid #AAAAAA;
-  color: #AAAAAA;
-  text-decoration: none;
-  font-size: 1em;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-
-}
-    
-.search{
-  float:right;
-  margin:1em;
-}
-    
-.search button{
-  background-color: white;
-  color: rgb(60, 114, 145);
-  float: right;
-  padding: 5px 10px;
-  margin-right: 16px;
-  font-size: 1.5em;
-  border: none;
-  cursor: pointer;
-} 
-
-
-
 
 main{
     
@@ -100,6 +5,7 @@ main{
     display: flex;
     justify-content: space-around;
     margin: 10em 0; 
+    height: 183em;
 }
 .intro, .intro2, .intro3, .code-editor{
   width: 100%;
@@ -164,10 +70,7 @@ margin-top: 5em;
     height: 5em;
     border-radius: 3em;
 }
-.intro2 button :hover {
-  background-color: #4a67e6;
-  color: white;
-}
+
 .intro2 a{
   font-family: 'Ubuntu', sans-serif;
   text-decoration: none;
@@ -176,10 +79,10 @@ margin-top: 5em;
 }
   .intro-img{
     position: absolute;
-    top: 39.7em;
-    left: 40em;
+    top: 39.2em;
+    left: 57em;
     height: 50em;
-    width: 55em;
+    width: 39em;
   }
 
 
@@ -276,8 +179,79 @@ color: #AAAAAA;
     .code-editor{
       background-image: url('/imgs/bkg1.jpg');
       max-width: 100%;
-      
       margin-top: 6em;
       height: 30em;
+      padding-top: 4em ;
 
     }
+    .code-editor h1{
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 3.5em;
+      color: white;
+      margin-bottom: 0;
+      
+    }
+.code-editor p {
+  font-size: 1.3em;
+    padding-top: 0;
+    display: block;
+    color: #7e7e7e;
+
+}
+
+.code-editor img{
+  position: absolute;
+  top: 148.7em;
+  left: 65em;
+  height: 24em;
+  width: 24em;
+
+}
+.code-editor button{
+  border: none;
+  color: white;
+  text-align: center;
+  margin: 1em;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #2771d0;
+  color: black;
+  width: 27em;
+    height: 5em;
+    border-radius: 3em;
+}
+
+.code-editor a{
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+
+.feature {
+  
+  text-align: center;
+  width: 100%;
+  height: 25em;
+  float: left;
+  display: block;
+  box-sizing: border-box;
+  padding: 8em 9% 0;
+}
+ .feature .col3{
+   width: 30%;
+   display: inline-block;
+ }
+ .col3 i{   
+    font-size: 4em;
+  color: gray;
+
+ }
+ .col3 h3{
+ margin: 0.5em 0 0;
+    font-size: 1.5em;
+ }
+ .col3 p{
+  margin: 0.5em 0 0;
+     font-size: 1em;
+  }

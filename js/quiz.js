@@ -10,17 +10,18 @@ function check() {
 
     let quiz = document.getElementById('quiz');
     if (q1 == 'HyperText Markup Language') { c++ };
-    console.log(q1);
     if (q2 == "True") { c++ };
     if (q3 == "alert('Hellow World')") { c++ };
     if (q4 == "style") { c++ };
     if (q5 == "$") { c++ };
     quiz.style.display = "none";
+
     if (c < 3) {
         result.textContent = `Unfortunately, your grade is ${c} `;
        
     }
     else if (c == 3) {
+
 
         result.textContent = `Congratulations, your grade is ${c} you got 10% off.`;
         disValue = 0.1;

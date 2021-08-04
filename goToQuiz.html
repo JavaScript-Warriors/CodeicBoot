@@ -6,50 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/goToQuiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@500&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <header>
-        <h1>Offer for you</h1>
+        
     </header>
     <main>
+        <div>
+            <h1>Offer for you</h1>
+            <img id="offerImg" src="imgs/offer.jpg" alt="">
+        </div>
+        <img id="bar" src="imgs/bar.jpg" alt="">
+        
+        <div>
         <p>
-            In order to provide assistance to interested and distinguished students, we have created a simple quiz to
-            measure the level of the student and offer him a discount based on his result in the exam. Please click on
-            the button to go to the quiz, wishing you success and obtaining a suitable discount.
+            <br>
+            &nbsp In order to provide assistance to interested and distinguished students, we have created a
+            simple quiz to measure the level of the student and offer him a discount based on his result in the quiz. 
+            <br>
+            <br>
+            &nbsp Please click <a id="quiz" href="quiz.html">Quiz</a> or on the button bellow to go to the quiz, wishing you success and obtaining a suitable discount.
         </p>
 
 
         <img src="imgs/discount.jpg" alt="">
+    </div>
 
-
-        <section>
+        <section id="formAndSec">
             <form id="quizForm">
                 <fieldset>
-                    <label for="fullName">Full Name</label>
-                    <input type="text" name="fullName">
+                    <br>
+                    <br><br>
+                    <label for="fullName">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Full Name : &nbsp</label>
+                    <input class="input" type="text" name="fullName">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
 
-                    <label for="email">E-mail</label>
-                    <input type="text" name="email">
+                    <label for="email">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp E-mail : &nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <input class="input" type="text" name="email">
 
                     <br>
                     <br>
-
+                    <br>
+                    <br>
+                    <br>
+                    <br>
 
                 </fieldset>
 
             </form>
+            <form action="quiz.html">
+                <input id="goToQuiz" type="submit" value="Go to Quiz" />
+            </form>
         </section>
-        <form action="quiz.html">
-            <input type="submit" value="Go to exam" />
-        </form>
 
-
-        <img src="imgs/exam.jpg" alt="">
 
 
     </main>
     <footer>
+        
         <script src="js/GoToQuiz.js">
 
         </script>

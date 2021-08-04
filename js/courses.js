@@ -11,6 +11,7 @@ for (let i = 0; i < Course.allCourses.length; i++) {
   let h5 = document.createElement("h5");
   let p = document.createElement("p");
   let hr = document.createElement("hr");
+  
   let btn = document.createElement("button");
   let h4 = document.createElement("h4");
   let br =document.createElement("br")

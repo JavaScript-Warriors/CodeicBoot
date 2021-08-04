@@ -18,15 +18,15 @@ Course.allCourses = [];
 function generateCourses() {
 
     new Course('php1', 'PHP for Beginners - Become a PHP Master - CMS Project','Are you new to PHP or need a refresher? Then this course will help you get all the fundamentals of Procedural PHP, Object Oriented PHP, MYSQLi, and ending the course by building a CMS system similar to WordPress, Joomla, or Drupal. Knowing PHP has allowed me to make enough money to stay home and make courses like this one for students all over the world. Being a PHP developer can allow anyone to make really good money online and offline, developing dynamic applications.',
-        'php', '150$','assets/php1.png');
+        'php', 150,'assets/php1.png');
     new Course('php2', 'PHP with Laravel for beginners - Become a Master in Laravel','Laravel has become one of the most popular if not the most popular PHP framework. Employers are asking for this skill for all web programming jobs and in this course we have put together all of them, to give you the best chance of landing that job; or taking it to the next level.',
-        'php','199$','assets/php2.png');
+        'php',199,'assets/php2.png');
     new Course('php3', 'PHP OOP: Object Oriented Programming for beginners + Project','This course will guaranteed you success if you apply yourself, and take the time to learn everything included.PHP has allowed me to make a really great income, so much that It gives me time to teach others about it. You too can become a professional in the field, and create the life you always dreamed of. PHP is one of the best web programming languages in the world, and all the big important websites, like Google, Apple, Facebook, Yahoo, Wikipedia and many more, use it for their web applications.',
-        'php', '350$','assets/php3.png');
+        'php', 350,'assets/php3.png');
     new Course('php4', 'Object Oriented PHP & MVC','In this course we will go step by step to build a complete custom MVC (Model View Controller) framework Called TraversyMVC using object oriented PHP. We will build something similar to Codeigniter but much much lighter. This framework is completely open source and you are free to change the name, add stuff, etc and use it as your own. This framework will include...',
-        'php', '250$','assets/php4.png');
+        'php', 250,'assets/php4.png');
     new Course('php5', 'Build a Social Network from Scratch: JavaScript PHP + MySQL','Are you new to PHP or need a refresher? Then this course will help you get all the fundamentals of Procedural PHP, Object Oriented PHP, MYSQLi, and ending the course by building a CMS system similar to WordPress, Joomla, or Drupal. Knowing PHP has allowed me to make enough money to stay home and make courses like this one for students all over the world. Being a PHP developer can allow anyone to make really good money online and offline, developing dynamic applications.',
-        'php', '57$','assets/php5.png');
+        'php', 57,'assets/php5.png');
 
 
 // omar's added

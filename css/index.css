@@ -189,11 +189,11 @@ font-weight: 600;
 
   .code-editor{
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 31%, rgba(1,79,172,1) 100%, rgba(0,212,255,1) 100%); 
+background: linear-gradient(90deg, rgba(2,0,36,1) 31%, rgba(1,79,172,1) 100%, rgba(0,212,255,1) 100%);
     max-width: 100%;
     margin-top: 6em;
     height: 30em;
-    padding-top: 4em ;
+    padding-top: 4em ;z
 
   }
   .code-editor h1{

@@ -14,8 +14,8 @@ for (let i = 0; i < Course.allCourses.length; i++) {
     let hr = document.createElement("hr");
     let btn = document.createElement("button");
     let h4 = document.createElement("h4");
-    let br =document.createElement("br")
-    let br2 =document.createElement("br")
+    // let br =document.createElement("br")
+    // let br2 =document.createElement("br")
 
 
 
@@ -33,7 +33,7 @@ for (let i = 0; i < Course.allCourses.length; i++) {
     div2.appendChild(hr);
     div2.appendChild(btn);
     div2.appendChild(h4);
-    coursesRaw.appendChild(br);
+    // coursesRaw.appendChild(br);
     // div2.appendChild(br2);
     // div2.appendChild(br);
 
@@ -43,7 +43,7 @@ for (let i = 0; i < Course.allCourses.length; i++) {
     h5.textContent = Course.allCourses[i].name;
     p.textContent = Course.allCourses[i].description;
     btn.textContent = "Add to Cart";
-    h4.textContent = Course.allCourses[i].price;
+    h4.textContent = `${Course.allCourses[i].price} $`;
 
 
 }

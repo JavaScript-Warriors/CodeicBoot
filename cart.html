@@ -8,9 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart - CodeicBoot</title>
     <link rel="icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/43b06b8078.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
-
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@500&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
 </head>
 <style>
 
@@ -19,28 +26,43 @@
 <body>
     <header>
         <div class="logo">
-            <!-- <img src="" alt=""> -->
-            <a href="index.html">
-                <h1>CodeicBoot</h1>
-            </a>
+          <a href="index.html">
+            <img src="imgs/logo2.png" alt="" class="logo-img" />
+          </a>
         </div>
         <nav>
-            <ul>
-                <li>
-                    <a href="courses.html">Courses</a>
-                </li>
-                <li>
-                    <a href="cart.html">Cart</a>
-                </li>
-                <li>
-                    <a href="aboutUs.html">About us</a>
-                </li>
-                <li>
-                    <a href="editor.html">Editor</a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+                <a href="courses.html">Courses</a>
+              </li>
+              <li>
+                <a href="aboutUs.html">About</a>
+              </li>
+             
+              <li>
+                <a href="editor.html">Editor</a>
+              </li>
+              
+              <li>
+          
+                <a href="cart.html" id="cartIcon">Cart</a>
+              </li>
+            
+              <div class="search">
+                <form action="#">
+                    <input type="text"
+                        placeholder=" Search Courses"
+                        name="search">
+                    <button>
+                        <i class="fa fa-search">
+                        </i>
+                    </button>
+                </form>
+            </div>
+            
+          </ul>
         </nav>
-    </header>
+      </header>
 
     <main id="main-cart">
         <div id="cart-div">
@@ -57,7 +79,7 @@
 <div id="total">
     <table id="totalTable"></table>
 </div>
-<button onclick="myFunction()">processed to checkout </button>
+<button class= "checkout" onclick="myFunction()">processed to checkout </button>
 
 
 
@@ -96,16 +118,99 @@
   </form>
 
     </main>
-    <footer>
-        <!-- <p>&copy;JavaScript Warriors</p>
-        <img src="imgs/call.png" alt="">
-        <img src="imgs/email.png" alt="">
-        <img src="imgs/github.png" alt="">
-        <p>contact us</p> -->
-        <!-- <script src="js/app.js"></script> -->
-        <script src="js/cart.js"></script>
 
-    </footer>
+    <footer>
+        <div class="about1">
+            <h2>About</h2>
+            <hr>
+            
+            <p>Develop yourself in the digital era for a brighter tomorrow. Our community is here to help along the way.</p>
+        </div>
+        <div class="about">
+            <h2>Courses </h2>
+            <hr>
+            <ul>
+                <li>
+                    <a href="">Front End Development</a>
+                </li>
+                <li>
+                    <a href="">Backend End Development</a>
+                </li>
+                <li>
+                    <a href="">DataBases</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="about">
+            <h2>Useful Links</h2>
+            <hr>
+            <ul>
+                <li>
+                    <a href="https://www.w3schools.com/">W3schools</a>
+                </li>
+                
+                <li>
+                    <a href="https://www.udemy.com/">Udemy</a>
+                </li>
+                
+                <li>
+                    <a href="https://www.google.com/">Google</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="about">
+            <h2> Contact</h2>
+            <hr>
+            <ul>
+                <li>
+                  <i class="fas fa-home"></i>
+                  <a href="">Jordan/Amman</a>
+                </li>
+                
+                <li>
+                  <i class="far fa-envelope"></i>
+                  <a href="">info@example.com</a>
+                </li>
+             
+                <li>
+                  <i class="fas fa-phone"></i>
+                  <a href="">+96278888888</a>
+                </li>
+                
+            </ul>
+        </div>
+    <section class="links" >
+        <div>
+            <h3 class="footerP">Get connected with us on social networks</h3>
+        </div>
+        
+        <div class="footerImg">
+            <a href="">
+                <img src="imgs/github.png" alt="">
+            </a>
+            <a href="">
+                <img src="imgs/instagram.png" alt="">
+            </a>
+            <a href="">
+                <img src="imgs/whatsapp.png" alt="">
+            </a>
+            <a href="">
+                <img src="imgs/facebook.png" alt="">
+            </a>
+            <a href="">
+                <img src="imgs/twitter.png" alt="">
+            </a>
+        </div>
+    </section>
+        <section class="copyright">
+            <p>&copy;2021 CodeicBoot </p>
+        </section>
+       
+      </footer>
+
+    <script src="js/cart.js"></script>
 </body>
 
 </html>

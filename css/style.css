@@ -138,7 +138,9 @@ float: left;
 width: 30%;
 padding-left: 15%;
 } */
-
+footer{
+    z-index: 2;
+}
 .footerImg{
     float: left;
     width: 100%;

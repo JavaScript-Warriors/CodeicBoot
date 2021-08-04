@@ -3,7 +3,7 @@
 
 let sum = 0;
 
-let discount = JSON.parse(localStorage.getItem('discount'))
+let discount = JSON.parse(localStorage.getItem('discount'));
 
 
 function x() {
@@ -11,7 +11,7 @@ function x() {
         keys = Object.keys(localStorage),
         i = keys.length;
     while (i--) {
-        if (keys[i] !== 'discount' && keys[i] !== 'allCourses' && keys[i] !== 'counter') {
+        if (keys[i] !== 'discount' && keys[i] !== 'allCourses' && keys[i] !== 'counter' && keys[i] !=='counter') {
             item.push(JSON.parse(localStorage.getItem(keys[i])));
         }
     }
@@ -34,7 +34,7 @@ function hedarForTable() {
 
     let thElemant2 = document.createElement('th');
     trElemant.appendChild(thElemant2);
-    thElemant2.textContent = 'imges';
+    thElemant2.textContent = 'Images';
 
     let thElemant3 = document.createElement('th');
     trElemant.appendChild(thElemant3);
@@ -188,6 +188,5 @@ function paySubmit(e) {
     clearCart();
     localStorage.clear();
     location.reload();
-
 }
 

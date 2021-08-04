@@ -1,4 +1,4 @@
-body{
+main{
     margin-top: 10em;
 padding: 0 9% 0;
 background-color: whitesmoke;
@@ -6,6 +6,7 @@ background-color: whitesmoke;
 #quiz{
     border-style: double;
     background-color: rgb(225, 231, 233);
+    width: 75em;
 }
 #quiz div {
     border-style:groove;

@@ -21,7 +21,8 @@ float: left;
     background-color: white;
     list-style: none;
     width: 100%;
-    padding-bottom: 1.875em;
+    padding-bottom: 1.2em;
+    margin-bottom: 3em;
 
 }
 
@@ -34,16 +35,15 @@ hr{
     width: 100%;
 }
 
-
 .courses2 div h5{
-font-size: 2.5em;
-margin-left: 2.5em;
-font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    margin-left: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    width: 20em;
 }
- 
 
 .courses2 div p{
-    font-size: 1.875em;
+    font-size: 1.2em;
     width: cover;
     flex-direction: column-reverse;
     justify-content: space-evenly;
@@ -51,32 +51,30 @@ font-family: 'Ubuntu', sans-serif;
 font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .courses2 h4 {
    
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
-    font-size: 2.5em;
-    margin-left: 1.25em;
-    float: left; 
-   margin: cover; 
+    font-size: 2em;
+    margin-left: 2em;
+    float: left;
+    margin-top: 1.2em;
 }
 .courses2 div button {
     width: 20%;
     height: 3.125em;
-    margin-top:  2.5em;
+    margin-top: 2.5em;
     background-color: #FFD523;
     border: 00.5px solid #50CB93;
     border-radius: 0.3125em;
-    color: #595260;
+    color: #000000;
     font-family: Roboto Mono;
-    font-size: 0.9375em;
-    font-weight: bold;
-    margin-left: 70%;
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-left: 60%;
+    margin-top: 1.5em;
 }
-
-
 
 .courses2 div button h4 {
     display: inline-block;
@@ -96,24 +94,27 @@ font-family: Arial, Helvetica, sans-serif;
 .btn ul {
     position: fixed;
     display: inline-block;
-   list-style: none;
-   top: 18em;
-   right: 0px;
-   left: 90em;
-   width: 15.625em;
+    list-style: none;
+    top: 6.5em;
+    right: 0px;
+    left: 70em;
+    width: 12.625em;
+   
 
 }
 
-
-
 .btn input {
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bolder;
     width: 150%;
     padding: 0.625em;
-    background: linear-gradient(50deg, #5b9ef0, #4371a8, #1f5494);
+    background: linear-gradient(
+50deg
+, #2f7bd7, #4371a8, #123c6e);
     border-radius: 0.375em;
+    color: white;
+}
 }
 .btn  li {
     padding: 0.625em;

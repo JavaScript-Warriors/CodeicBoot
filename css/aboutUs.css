@@ -2,11 +2,16 @@
 * {
     box-sizing: border-box;
    }
-   body{
-
-    background-color: whitesmoke;
+   main{
+    margin: 8em 0 10em;
+}
+   
    }
-  
+   .aboutUS{
+     width: 100%;
+     padding: 0 9%;
+   }
+   
    input[name=feedBack] {
       
        height: 150px;
@@ -66,6 +71,7 @@
    padding: 20px;
    width: 75%;
    margin-left: 10%;
+   border: 1px solid gray;
   }
   h2{
 
@@ -78,11 +84,13 @@
     letter-spacing: 0.8px;
     line-height: 1.8;
     word-spacing: 1.5px;
+    width: 100%;
+    padding: 0 9%;
     
   }
   #aboutOurWebpage h2 , #JavaScript-Warriors h2 {
     text-transform: uppercase;
-    padding: 100px;
+    padding: 1em;
   }
 .pargraph , .text{
   text-align: center;
@@ -90,6 +98,10 @@
   letter-spacing: 0.8px;
   line-height: 1.8;
   word-spacing: 1.5px;
+}
+.pargraph {
+width: 60em;
+margin: 0 auto;
 }
 .mySlides{
   display: block;
@@ -101,6 +113,19 @@
 }
 #slideShow{
 
-  background-color: whitesmoke;
+  background-color: white;
+  padding: 2em;
+margin: 7em 0;  
 }
 
+footer{
+  height: 30em;
+}
+.logo-img {
+  height: 85%;
+  padding-top: 5%;
+}
+
+li {
+  padding-top: 4.5%;
+}

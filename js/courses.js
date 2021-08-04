@@ -63,8 +63,9 @@ function scrollFunction() {
     }
 }
 
-// eslint-disable-next-line no-unused-vars
-function topFunction() {
+mybutton.addEventListener('click', function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-}
+});
+
+

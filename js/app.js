@@ -99,6 +99,7 @@ function x() {
     }
     return item;
 }
+
 let cartItem = x();
 counter=cartItem.length;
 if (counter === 0) {

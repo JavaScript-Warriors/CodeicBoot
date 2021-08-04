@@ -201,7 +201,7 @@ function bodyForTable() {
         let btndele = document.createElement('button');
         trElemantForBody.appendChild(btndele);
         btndele.setAttribute('value', cartItem[i].key);
-        btndele.textContent = 'X';
+        btndele.textContent = ' X ';
         btndele.classList='RemoveIcon';
 
         btndele.addEventListener('click', removeItemFromCart);

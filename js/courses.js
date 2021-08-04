@@ -49,6 +49,7 @@ function addToCart() {
         let courseStored = JSON.stringify(coursesInCart[i]);
         localStorage.setItem(coursesInCart[i].key, courseStored);
     }
+    location.reload();
 }
 // eslint-disable-next-line no-var
 var mybutton = document.getElementById('myBtn');

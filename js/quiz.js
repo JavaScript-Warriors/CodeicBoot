@@ -40,7 +40,7 @@ function creatbutton() {
     let corseLink = document.createElement('a');
     let button = document.createElement('button');
     corseLink.appendChild(button);
-    button.textContent = 'go to course';
+    button.textContent = 'Go To Courses';
     // eslint-disable-next-line no-undef
     result.appendChild(corseLink);
     corseLink.href = './courses.html';

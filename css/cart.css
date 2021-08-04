@@ -9,7 +9,7 @@ img{
   width: 30%;
 height: 20%;
 
-border-radius: 15%;
+
 }
 
 
@@ -76,6 +76,7 @@ border-radius: 15%;
       color: white;
       background-color: navy;
       font-weight:normal ;
+      opacity: 0.5;
     }
     th{
       padding: 10px 5px ;
@@ -107,7 +108,7 @@ padding-right: 20%;
     margin-left: 20%;
     text-align: center;
     padding-right: 20%;
-    background-color: red;
+    background-color: gray;
     margin-top: 40%;
     border-radius:100% ;
     
@@ -115,7 +116,7 @@ padding-right: 20%;
 
    }
    .RemoveIconn{
-    background-color: red;
+    background-color: gray;
    }
    text{
     text-align: center;

@@ -1,3 +1,4 @@
+
 'use strict';
 
 let sum = 0;
@@ -189,3 +190,4 @@ function paySubmit(e) {
     location.reload();
 
 }
+

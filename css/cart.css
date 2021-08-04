@@ -1,12 +1,15 @@
-table,tr,th,td{
+/* table,tr,th,td{
     border: 1px solid black;
     border-collapse: collapse;
-}
+} */
 
 
 img{
 
-    width: 200px;
+  width: 30%;
+height: 20%;
+
+
 }
 
 
@@ -15,6 +18,7 @@ img{
 
 #a{
     display: none;
+    background-color: whitesmoke;
 }
 
     body {font-family: Arial, Helvetica, sans-serif;}
@@ -46,6 +50,75 @@ img{
     
     .container {
       border-radius: 5px;
-      background-color: #f2f2f2;
+      
       padding: 20px;
     }
+
+    .footer {
+      color: brown;
+      
+    }
+    #table{
+
+      width: 80%;
+      border-collapse: collapse;
+      margin-left: 10%;
+    }
+    .remove{
+
+      width: 20px;
+      background-color: red;
+    }
+    .header{
+
+      /* text-align-last:right ; */
+      padding: 5px;
+      color: white;
+      background-color: navy;
+      font-weight:normal ;
+      opacity: 0.5;
+    }
+    th{
+      padding: 10px 5px ;
+    }
+  
+   #total{
+
+    display: flex;
+    justify-content: flex-end;
+   }
+   #totalTable{
+
+    border-top:3px solid navy ;
+    width: 100%;
+    max-width: 400px;
+    margin-right: 10%;
+   }
+   td:last-child , th:last-child{
+
+    text-align: right;
+   }
+   .NameList{
+     
+text-align: center;
+padding-right: 20%;
+
+   }
+   .RemoveIcon{
+    margin-left: 20%;
+    text-align: center;
+    padding-right: 20%;
+    background-color: gray;
+    margin-top: 40%;
+    border-radius:100% ;
+    
+
+
+   }
+   .RemoveIconn{
+    background-color: gray;
+   }
+   text{
+    text-align: center;
+
+   }

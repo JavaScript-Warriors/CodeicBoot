@@ -1,3 +1,4 @@
+
 'use strict';
 
 let sum = 0;
@@ -50,86 +51,12 @@ hedarForTable();
 bodyForTable();
 footerForTable();
 
-function footerForTable() {
 
-    // let trElemantForFooter = document.createElement('tr');
-    // table.appendChild(trElemantForFooter);
 
 
 function footerForTable() {
     
-    let trElemantForFooter = document.createElement('tr');
-    table.appendChild(trElemantForFooter);
-
-
-
-    // let discountfooter = document.createElement('tr');
-    // table.appendChild(discountfooter);
-
-
-    let thElemantForFooter2 = document.createElement('th');
-    trElemantForFooter.appendChild(thElemantForFooter2);
-    
-
-    thElemantForFooter2.textContent = `${sum} $`;
-
-    let trElemant = document.createElement('th');
-    trElemantForFooter.appendChild(trElemant);
-
-
-   
-
-
-    let discountValeu = sum - (discount * sum);
-
-
-    let discountfooter = document.createElement('tr');
-
-
-    table.appendChild(discountfooter);
-
-    discountfooter.textContent = "Discount";
-
-
-
-    // let discountfooter123 = document.createElement('th');
-
-    let discountfooter1 = document.createElement('th');
-
-    discountfooter.appendChild(discountfooter1);
-
-
-    discountfooter1.textContent = `${discount * 100} %`;
-
-
-
-
-
-    let discountValeu = sum - (discount * sum);
-
-
-
-    let discountfooter12 = document.createElement('tr');
-    table.appendChild(discountfooter12);
-    discountfooter12.textContent = "Total After Discount";
-
-    // let thElemantForFooter2 = document.createElement('th');
-    // trElemantForFooter.appendChild(thElemantForFooter2);
-    // let trElemant = document.createElement('th');
-    // trElemantForFooter.appendChild(trElemant);
-    // let thElemantForFooter20 = document.createElement('th');
-    // trElemantForFooter.appendChild(thElemantForFooter20);
-
-
-
-    let discountfooter123 = document.createElement('th');
-
-    discountfooter12.appendChild(discountfooter123);
-
-
-    discountfooter123.textContent = `${discountValeu} $`;
-
-
+    let discountValeu=sum-sum*discount;
     let totalTable=document.getElementById('totalTable');
     let trElemantForTotal=document.createElement('tr');
     totalTable.appendChild(trElemantForTotal);
@@ -168,12 +95,9 @@ function clearCart() {
     sum = 0;
    
     while (table.rows.length > 0) {
-        // table.deleteRow(0);
+       
         document.getElementById('table').deleteRow(0);
-        // document.getElementById('totalTable').deleteRow(0);
-        // document.getElementById('totalTable').deleteCell(0);
-        
-        
+      
     }
     document.getElementById('totalTable').deleteRow(2);
     document.getElementById('totalTable').deleteRow(1);
@@ -229,7 +153,7 @@ function bodyForTable() {
 
 function removeItemFromCart() {
     
-    localStorage.removeItem(this.value)
+    localStorage.removeItem(this.value);
 
     cartItem = x();
    
@@ -253,7 +177,7 @@ function myFunction() {
         x.style.display = 'none';
 
     }
-);
+}
 
 let payForm = document.getElementById('a');
 payForm.addEventListener('submit', paySubmit);
@@ -266,3 +190,4 @@ function paySubmit(e) {
     location.reload();
 
 }
+

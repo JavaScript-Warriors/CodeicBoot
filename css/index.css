@@ -1,12 +1,12 @@
 
 main{
-    
-    background-color: #f8f8fa
+    background-color: #f8f8fa;
     display: flex;
     justify-content: space-around;
     margin: 10em 0; 
     height: 183em;
 }
+
 .intro, .intro2, .intro3, .code-editor{
   width: 100%;
   height: 44em;

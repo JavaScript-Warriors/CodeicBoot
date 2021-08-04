@@ -137,7 +137,7 @@ checkoutButton[0].addEventListener('click', function() {
     let x = document.getElementById('a');
     if (!shown) {
         x.style.display = 'block';
-        checkoutButton[0].innerText = 'Hide Checkout From';
+        checkoutButton[0].innerText = 'Hide Checkout Form';
         shown = !shown;
     } else {
         x.style.display = 'none';

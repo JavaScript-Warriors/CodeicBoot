@@ -154,11 +154,26 @@ function paySubmit(e) {
     clearCart();
     localStorage.clear();
     // location.reload();
-let div=document.getElementById('div');
-    let elemant = document.getElementById('h2');
+    
+    let div=document.getElementById('cart-div');
+    let div2 = document.createElement('div');
+    let h2 = document.createElement('h2');
+    let btn = document.createElement('button');
+    let a = document.createElement('a');
+    div2.setAttribute('id','gift');
+    a.setAttribute('href','freecourse.html');
+    div.textContent=' ';
+    div.appendChild(div2);
+    div2.appendChild(h2);
+    div2.appendChild(btn);
+    btn.appendChild(a);
+
+    h2.textContent = 'congratulations, you received a free course from JavaScript-Warriors.' ;
+    a.textContent = 'Go to Free Course';
+
     
     // elemant.setAttribute('href','freecourse.html');
-    document.getElementById('h2').textContent = 'congratulations, you received a free course from JavaScript-Warriors.' ;
+    // document.getElementById('h2').textContent = 'congratulations, you received a free course from JavaScript-Warriors.' ;
 }
 
    

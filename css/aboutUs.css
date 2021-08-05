@@ -53,7 +53,7 @@
      }
      
   input[type=submit] {
-   background-color: #4CAF50;
+   background-color: #2771d0;
    color: white;
    padding: 12px 20px;
    border: none;
@@ -62,7 +62,7 @@
    float: right;
   }
   input[type=submit]:hover {
-   background-color: #45a049;
+   background-color: #6296db;
    
   }
   #form {
